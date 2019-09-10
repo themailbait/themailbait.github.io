@@ -401,7 +401,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   
 <div style="display:none;" id="settings">
   <!-- <em>Allow popups on mailbait.info to run this service.</em> -->
-<label for="selector" id="speedlabel">Speed</label>
+<label for="selector" id="speedlabel">Speed (disable Adblock for more speed)</label>
 <select name="speed" id="speed">
   <option selected="selected" value="5000">12 per minute</option>
   <option value="3000">20 per minute</option>
@@ -487,7 +487,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 //detect adblock
 adblock_present = document.getElementById('adbrite1').innerHTML.length;
 
-document.getElementById("speedlabel").innerHTML = "Speed (disable Adblock for more speed)";
+//document.getElementById("speedlabel").innerHTML = "Speed (disable Adblock for more speed)";
 if (adblock_present < 115){
   //alert('adblock present' + adblock_present);
   document.getElementById("speedlabel").innerHTML = "Speed (disable Adblock for more speed)";
