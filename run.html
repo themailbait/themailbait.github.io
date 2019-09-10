@@ -39,6 +39,22 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 <![endif]-->
+<style>
+    .wrap {
+    width: 200%;
+    height: 125px;
+    overflow1: hidden;
+}
+
+iframe {
+    width: 100% !important;
+    height: 75% !important;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+</style>
 
 <script type="text/javascript">
 
@@ -227,10 +243,10 @@ function testform(){
 
 if (document.getElementById('pause').checked==false){
         sends = sends + 1; //increment counter of how many we've sent
-  document.getElementById('iframe1').src='';
+  //document.getElementById('iframe1').src='';
   removeChildrenRecursively(document.forms['f0']);  //clear the previous form[0]
   
-  document.forms['f0'].target='iframe1';
+ // document.forms['f0'].target='iframe1';
   if (JSON.items[i]['.mbm']=='P'){document.forms['f0'].method='POST';}
   if (JSON.items[i]['.mbm']=='G'){document.forms['f0'].method='GET';}
   
@@ -266,18 +282,18 @@ if (document.getElementById('pause').checked==false){
   
   //var newwin = window.open('','Windows2');
   
-  document.forms['f0'].target='Window2'; //post to popup -- comment out to not post to popup
-  
+  //document.forms['f0'].target='Window2'; //post to popup -- comment out to not post to popup
+   document.forms['f0'].target='my_iframe';
   
   //alert(document.getElementById('skiphttps').checked)
   
   
 if (document.getElementById('pause').checked == false){
-  var newwin = window.open('','Window2');
+  //var newwin = window.open('','Window2');
   document.forms['f0'].mbbsubmit.click(); //this DOES work if we have element named 'submit'
-    if (document.getElementById('windowclose').checked == true){
-    newwin.close();
-  }
+  //  if (document.getElementById('windowclose').checked == true){
+  //  newwin.close();
+  //}
 };
 
   //setTimeout("win2.close()",1000); //post to popup --comment out to not pop to popup
@@ -313,7 +329,7 @@ if (document.getElementById('pause').checked == false){
    
     if (document.getElementById('pause').checked == false ){
     //usually yields MUCH better results, by working through broken https certificates
-    windowclose = "var newwin = window.open('','Window2');newwin.close();";
+    //windowclose = "var newwin = window.open('','Window2');newwin.close();";
     }
   
    
@@ -407,6 +423,8 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 </section> 
 
+
+
 <div style="display:none;" id="stats">
 <section class="row" id="run1">   
 <hr class="marginbottom">           
@@ -414,14 +432,33 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   <div id="graph" name="graph"></div>
   <div id="pack" name="pack"></div>
   <div style="display:none;">
-    <iframe name="iframe1" id="iframe1" width="100%" height="0" src="about:none" frameborder="1" scrolling="yes"></iframe>
     <form name="f0" id="f0"></form>
   </div>  
 
 </div>  
+
 </section> 
+
 </div>
+
+<section class="row" >  
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7432498983055520";
+/* ad1 */
+google_ad_slot = "4177216180";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+<div class="col16">
+  <div class="wrap">
+    <iframe name="my_iframe" sandbox="" referrerpolicy="no-referrer" src="" >
+  </div>
+</div>
+</section> 
         
+
 
 <footer>
 <hr class="marginbottom">
@@ -430,6 +467,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h6> <br/></div>
 <div class="col1_3"><h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a></h6><br/></div>
 </footer>
+
+
+
+
 </div>
 
 <script type="text/javascript">
@@ -461,6 +502,9 @@ if (adblock_present < 115){
 } //end detect adblock
 
 </script>
+
+
+
 
 </body>
 </html>
