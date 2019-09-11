@@ -171,7 +171,7 @@ function getQuerystring(key, default_)
         //need .mbAction
         //need .mbMethod
         //rest goes to payload.
-        
+        speed
         
         //if (x ==1 )
        // {
@@ -327,7 +327,7 @@ if (document.getElementById('pause').checked == false){
         per =  per + ".00001";
         per = per.substring(0,4);
         if (per > 100) per = 100;
-  document.getElementById('graph').innerHTML= totalsgraph + "<h3>Working in Pack "+pack+". Progress: "+(i+1)+ " of "+pCount+"</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
+  document.getElementById('graph').innerHTML= totalsgraph + "<h3>Procssing Pack " + (packcount) + ". Progress: "+(i+1)+ " of "+pCount+"</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
   
       
       
@@ -410,7 +410,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   
 <div style="display:none;" id="settings">
   <!-- <em>Allow popups on mailbait.info to run this service.</em> -->
-<label for="selector" id="speedlabel">Speed (disable Adblock for more speed)</label>
+<label for="selector" id="speedlabel">Speed</label>
 <select name="speed" id="speed">
   <option selected="selected" value="5000">12 per minute</option>
   <option value="3000">20 per minute</option>
@@ -471,9 +471,8 @@ google_ad_height = 90;
 <section class="row" >  
 <div class="col16" style="margin-bottom:">
 <div id="SlappyAdsDetected">
-<!-- https://www.detectadblock.com/ -->
-  MailBait is made possible for free by displaying inline advertisements to our visitors.<br>
-  Please consider supporting us by disabling your ad blocker.
+  MailBait is made possible for free by displaying inline advertisements to our visitors.<Br/>
+  Thank you for supporting us by disabling your ad blocker.
 </div>
 <div id="result" name="result" ></div>
 <script type="text/javascript">
@@ -482,10 +481,15 @@ document.addEventListener('DOMContentLoaded', init, false);
 function init(){
   adsBlocked(function(blocked){
     if(blocked){
+      //add blocked, turn on message in slappyads, turn on speed label, disable faster speeds.  yup.
       //document.getElementById('result').innerHTML = 'ads are blocked';
       document.getElementById('SlappyAdsDetected').style.display='block';
+      document.getElementById('speedlabel').innerHTML="Speed: (disable Adblock for faster speed options)"
+      //speedlabel Speed: (disable Adblock for more speed)
+      //minimize speed options
     } else {
       //document.getElementById('result').innerHTML = 'ads are not blocked';
+      //add more speed options
     }
   })
 }
