@@ -413,11 +413,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <label for="selector" id="speedlabel">Speed</label>
 <select name="speed" id="speed">
   <option selected="selected" value="5000">12 per minute</option>
-  <option value="3000">20 per minute</option>
-  <option value="2000">30 per minute</option>
-  <option value="1500">45 per minute</option>
-  <option value="1000">60 per minute</option>
- 
 </select>
 
 <!--
@@ -490,6 +485,30 @@ function init(){
     } else {
       //document.getElementById('result').innerHTML = 'ads are not blocked';
       //add more speed options
+     var x = document.getElementById("speed");
+     var option1 = document.createElement("option");
+     var option2 = document.createElement("option");
+     var option3 = document.createElement("option");
+     var option4 = document.createElement("option");
+
+     option1.text = "20 per minute";
+     option1.value = "3000";
+     x.add(option1);
+     option2.text = "30 per minute";
+     option2.value = "2000";
+     x.add(option2);
+     option3.text = "45 per minute";
+     option3.value = "1500";
+     x.add(option3);
+     option4.text = "60 per minute";
+     option4.value = "1000";
+     x.add(option4);
+
+  //<option value="3000">20 per minute</option>
+  //<option value="2000">30 per minute</option>
+  //<option value="1500">45 per minute</option>
+  //<option value="1000">60 per minute</option>
+
     }
   })
 }
