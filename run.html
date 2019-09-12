@@ -67,6 +67,25 @@
   border-radius: 5px;
 }
 
+.glow {
+  font-size:;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+  }
+}
+
 </style>
 
 <script type="text/javascript">
@@ -467,7 +486,7 @@ google_ad_height = 90;
 <div class="col16" style="margin-bottom:">
 <div id="SlappyAdsDetected">
    Since you’re here…<Br/>
-   … we have a small favour to ask. MailBait is made possible for free by displaying advertisements to our visitors.<Br/>
+   … we have a small favour to ask. MailBait is made possible for <span class="glow">free</span> by displaying advertisements to our visitors.<Br/>
   Thank you for supporting us by disabling your ad blocker.
 </div>
 <div id="result" name="result" ></div>
