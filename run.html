@@ -539,11 +539,11 @@ function init(){
       document.getElementById('speedlabel').innerHTML="Speed: (disable Adblock for faster speed options)"
       //speedlabel Speed: (disable Adblock for more speed)
       //minimize speed options
-      _gaq.push(['_trackEvent', 'adBlock', 'BLOCKED']);
+      _gaq.push(['_trackEvent', 'ads', 'BLOCKED(adblock)']);
     } else {
       //document.getElementById('result').innerHTML = 'ads are not blocked';
       //add more speed options
-     _gaq.push(['_trackEvent', 'adBlock', 'ENABLED']);
+     _gaq.push(['_trackEvent', 'ads', 'Shown']);
      var x = document.getElementById("speed");
      var option1 = document.createElement("option");
      var option2 = document.createElement("option");
