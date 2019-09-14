@@ -1,0 +1,91 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+<body>
+
+<script>
+var B10="0123456789";
+var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+function convert(src,srctable,desttable)
+{var srclen=srctable.length;var destlen=desttable.length;var val=0;var numlen=src.length;for(var i=0;i<numlen;i++)
+{val=val*srclen+srctable.indexOf(src.charAt(i));}
+if(val<0)
+{return 0;}
+var r=val%destlen;var res=desttable.charAt(r);var q=Math.floor(val/destlen);while(q)
+{r=q%destlen;q=Math.floor(q/destlen);res=desttable.charAt(r)+res;}
+return res;}
+console.log(convert("123456",B10,B32))
+console.log(convert("5SL2",B32,B10))
+document.write("test<br/>");
+
+
+document.write("<br/>");
+var dt = Math.round((Date.now() - Date.parse("01/01/2019"))/(1000*60*60*24));
+var dt1 = dt + 1000;
+
+document.write("<Br/>" + dt1);
+
+n = dt1 + "";
+n= n.split("").reverse().join("");
+
+document.write("<Br/>" +n);
+
+n2 = n + "7";
+
+document.write("<Br/><Br/>" +n2);
+document.write("<Br/>" +convert(n2,B10,B32));
+
+n3 = n + "07";
+
+document.write("<br/><Br/>" +n3);
+document.write("<Br/>" +convert(n3,B10,B32));
+
+n4 = n + "007";
+
+document.write("<br/><Br/>" +n4);
+document.write("<Br/>" +convert(n4,B10,B32));
+
+
+var n44 =  convert(n4,B10,B32);
+var test = convert(n44,B32,B10);
+document.write("<br/><Br/>test  " +n44);
+document.write("<br/><Br/>test  " +test);
+var d = test.slice(0, 4).split("").reverse().join("") - 1000;
+document.write("<br/><Br/>days from jan1 2019:  " +d);
+var t = test.slice(5,10)
+document.write("<br/><Br/>days valid:  " +t);
+
+//check;
+// if current day //var dt = Math.round((Date.now() - Date.parse("01/01/2019"))/(1000*60*60*24));
+// is >= XXXX - 1000  or <= XXXX-1000+Y
+
+
+
+//convert("5SL2",B32,B10)
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Mailbait uses cookies",
+    "href": "http://mailbait.info/faq.html"
+  }
+});
+</script>
+
+</body>
+</html>
