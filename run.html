@@ -490,6 +490,43 @@ google_ad_height = 90;
   Thank you for supporting us by disabling ad blocker for this site.
 </div>
 <div id="result" name="result" ></div>
+
+</div>
+</section> 
+
+<footer>
+<hr class="marginbottom">
+<div class="col1_3"><h6><span id="footer-copyright"></span></h6><br/> </div>
+<div class="col1_3"><h6><a href="https://twitter.com/share" class="twitter-share-button" data-url="MailBait.info" data-text="Fill your inbox. MailBait.info">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h6> <br/></div>
+<div class="col1_3"><h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a></h6><br/></div>
+</footer>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+var d = new Date();
+var n = d.getFullYear();
+document.getElementById('footer-copyright').innerHTML = '&copy; MailBait ' + n;
+
+</script>
+    
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23915961-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', init, false);
 
@@ -502,9 +539,11 @@ function init(){
       document.getElementById('speedlabel').innerHTML="Speed: (disable Adblock for faster speed options)"
       //speedlabel Speed: (disable Adblock for more speed)
       //minimize speed options
+      ga('send', 'event', 'Category', 'Action', 'Label', 'adsblocked');
     } else {
       //document.getElementById('result').innerHTML = 'ads are not blocked';
       //add more speed options
+     ga('send', 'event', 'Category', 'Action', 'Label', 'adsenabled');
      var x = document.getElementById("speed");
      var option1 = document.createElement("option");
      var option2 = document.createElement("option");
@@ -553,40 +592,6 @@ function adsBlocked(callback){
     callback(true)
   });
 }
-</script>
-</div>
-</section> 
-
-<footer>
-<hr class="marginbottom">
-<div class="col1_3"><h6><span id="footer-copyright"></span></h6><br/> </div>
-<div class="col1_3"><h6><a href="https://twitter.com/share" class="twitter-share-button" data-url="MailBait.info" data-text="Fill your inbox. MailBait.info">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h6> <br/></div>
-<div class="col1_3"><h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a></h6><br/></div>
-</footer>
-
-
-
-
-</div>
-
-<script type="text/javascript">
-var d = new Date();
-var n = d.getFullYear();
-document.getElementById('footer-copyright').innerHTML = '&copy; MailBait ' + n;
-
-</script>
-    
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23915961-2']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
 </script>
 
 
