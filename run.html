@@ -435,23 +435,23 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <select name="speed" id="speed">
   <option selected="selected" value="5000">12 per minute</option>
 </select>
-<input id="categories" type="checkbox" checked="checked">Show Mail Categories
+<input id="categories1" name = "categories1" type="checkbox" checked="checked" onClick="document.getElementById('features1').style.display='block';if(document.getElementById('categories1').checked==false){document.getElementById('features1').style.display='none'}"> Show Mail Categories
 
 <!--
 <label for="windowclose">Popups</label>
 <input type="checkbox" id="windowclose" checked="checked" value="YES" /> post forms in background<br/>
 -->
 
-<label for="pause" id="pauselbl">Stop (MailBait is currrently <a href="#running1">running below</a>. This tab must remain open.)</label>
-<div style="display:none;"> <input type="checkbox" name="pause" id="pause" value="true" /> Pause progress <br/> </div>
-<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Stop (MailBait is currently <a href=#running1>running below</a>. This tab must remain open.)';};" />
+<label for="pause" id="pauselbl">Active (MailBait is currrently <a href="#running1">running below</a>. This tab must remain open.)</label>
+<div style="display:none;"> <input type="checkbox" name="pause" id="pause" checked="checked" /> Pause progress <br/> </div>
+<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Active (MailBait is currently <a href=#running1>running below</a>. This tab must remain open.)';};" />
 
 </div>
 </div>
 </section> 
 
 
-<section class="row" id="features1" style="font-size: 75% !important;" >
+<section class="row" id="features1" name="features1" style="font-size: 75% !important;display:;" >
           
 <div class="col2" > 
 <h3>Default Categories</h3>
