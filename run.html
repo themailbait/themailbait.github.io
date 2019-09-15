@@ -340,7 +340,7 @@ if (document.getElementById('pause').checked == false){
         per =  per + ".00001";
         per = per.substring(0,4);
         if (per > 100) per = 100;
-  totalsgraph = "<h2>" + sends + " forms processed. <b>Pro and Pro+ categories are skipped.</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.<br/><br/><h3>Overall Progress: " + (packcount) + " of "+totalpacks+" packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
+  totalsgraph = "<h2>" + sends + " forms processed. <b>Pro and Pro+ categories are skipped.</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open to continue processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of "+totalpacks+" packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
         
 
   per = (i/pCount)*100;  // draw progress of how far through this pack
@@ -441,9 +441,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <input type="checkbox" id="windowclose" checked="checked" value="YES" /> post forms in background<br/>
 -->
 
-<label for="pause" id="pauselbl">Stop (MailBait is currrently running below)</label>
+<label for="pause" id="pauselbl">Stop (MailBait is currrently running below. This tab must remain open.)</label>
 <div style="display:none;"> <input type="checkbox" name="pause" id="pause" value="true" /> Pause progress <br/> </div>
-<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Stop (MailBait is currently running below)';};" />
+<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Stop (MailBait is currently running below. This tab must remain open.)';};" />
 
 </div>
 </div>
@@ -519,7 +519,8 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <input type="checkbox" >Turbo Tax, Tax Act, H&R Block<br/>
 <input type="checkbox" >AARP, Carnival Cruise, Royal Caribbean<br/>
 <input type="checkbox" >mesothelioma lawsuit<br/>
-
+<input type="checkbox" >DOT Prison currency transfers<br/>
+<input type="checkbox" >Crimiminal attorney,BailBonds <br/>
 
 </div>
 <div class="col3" style="font-size: 80% !important">
@@ -544,6 +545,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <input type="checkbox" >End of life photography<br/>
 <input type="checkbox" >bikini-hair removal<br/>
 <input type="checkbox" >Rectal Rodeo clowns<br/>
+<input type="checkbox" >Ransomware, Cryptoware opt-in<br/>
 </div>
 
 
