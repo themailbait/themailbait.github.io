@@ -442,11 +442,12 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <input type="checkbox" id="windowclose" checked="checked" value="YES" /> post forms in background<br/>
 -->
 
-<label for="pause" id="pauselbl">Active (MailBait is currrently <a href="#running1">running below</a>. This tab must remain open.)</label>
+<label for="pause" id="pauselbl">Active (MailBait is currrently <a href="#running1" style="color:green;">running below</a>. This tab must remain open.)</label>
 <div style="display:none;"> <input type="checkbox" name="pause" id="pause" checked="checked" /> Pause progress <br/> </div>
-<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Active (MailBait is currently <a href=#running1>running below</a>. This tab must remain open.)';};" />
+<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently <span style=color:darkorange>PAUSED</span>)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Active (MailBait is currently <a href=#running1 style=color:green;>running below</a>. This tab must remain open.)';};">
 
-<br/><input id="categories1" name = "categories1" type="checkbox" checked="checked" onClick="document.getElementById('features1').style.display='block';if(document.getElementById('categories1').checked==false){document.getElementById('features1').style.display='none'}"> Show Mail Categories
+<div><input autocomplete="off" id="categories1" name="categories1" type="checkbox" checked="checked" onClick="document.getElementById('features1').style.display='block';if(document.getElementById('categories1').checked==false){document.getElementById('features1').style.display='none'}"> Show Mail Categories
+</div>
 
 </div>
 </div>
@@ -457,37 +458,37 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
           
 <div class="col2" > 
 <h3>Default Categories</h3>
-<input type="checkbox" checked='checked'>College and University Classes<br/>
-<input type="checkbox" checked='checked'>Open Source Software / Coding<br/>
-<input type="checkbox" checked='checked'>Uber, Lyft, Meal and Grocery delivery<br/>
-<input type="checkbox" checked='checked'>Vet, Pet, and lawn care<br/>
-<input type="checkbox" checked='checked'>Late-night radio, UFO, and Conspiracy<br/>
-<input type="checkbox" checked='checked'>Word of the Day, Funny Cat Photos<br/>
-<input type="checkbox" checked='checked'>Enterprise and Fortune 500 IT resources and infrastructure<br/>
-<input type="checkbox" checked='checked'>Politicals and Local Government<br/>
-<input type="checkbox" checked='checked'>Vitamin, Protein, Supplement and Beauty products<br/>
-<input type="checkbox" checked='checked'>Quilting, Crafting, Minatures, Table-top Gaming<br/>
-<input type="checkbox" checked='checked'>Car, Motercycle, Boat loans<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>College and University Classes<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Open Source Software / Coding<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Uber, Lyft, Meal and Grocery delivery<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Vet, Pet, and lawn care<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Late-night radio, UFO, and Conspiracy<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Word of the Day, Funny Cat Photos<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Enterprise and Fortune 500 IT resources and infrastructure<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Politicals and Local Government<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Vitamin, Protein, Supplement and Beauty products<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Quilting, Crafting, Minatures, Table-top Gaming<br/>
+<input autocomplete="off" type="checkbox" checked='checked'>Car, Motercycle, Boat loans<br/>
 </div>
 
 <div class="col3">
 <h3>MailBait Pro Categories</h3>
-<input type="checkbox" >Sweepstakes and Gambling<br/>
-<input type="checkbox" >Dating, LBGQY+ and Hookup apps<br/>
-<input type="checkbox" >Work From Home, Home Business<br/>
-<input type="checkbox" >MMA, BJJ, Karate, Fitness<br/>
-<input type="checkbox" >Mental and Physical Health, wellness<br/>
-<input type="checkbox" >Investing, Retirement, Stock, Daytrading<br/>
-<input type="checkbox" >Collections and Medical invoice double-billing<br/>
-<input type="checkbox" >Transferable Life-insurance policies<br/>
-<input type="checkbox" >Piercings, Tattoos, Scarification<br/>
-<input type="checkbox" >inoluntary drug testing, trials, and screening<br/>
-<input type="checkbox" >Secret Shopper, Angies List, Yelp reviews<br/>
-<input type="checkbox" >Job Search, Dice, Monster, Indeed, Recruiters<br/>
-<input type="checkbox" >Checking, Credit Restoration<br/>
-<input type="checkbox" >Van-Life, and offgrid<br/>
-<input type="checkbox" >Fishing, Hunting, Outdoors<br/>
-<input type="checkbox" >NSFW, *Hub, lingerie<br/>
+<input autocomplete="off" type="checkbox" >Sweepstakes and Gambling<br/>
+<input autocomplete="off" type="checkbox" >Dating, LBGQY+ and Hookup apps<br/>
+<input autocomplete="off" type="checkbox" >Work From Home, Home Business<br/>
+<input autocomplete="off" type="checkbox" >MMA, BJJ, Karate, Fitness<br/>
+<input autocomplete="off" type="checkbox" >Mental and Physical Health, wellness<br/>
+<input autocomplete="off" type="checkbox" >Investing, Retirement, Stock, Daytrading<br/>
+<input autocomplete="off" type="checkbox" >Collections and Medical invoice double-billing<br/>
+<input autocomplete="off" type="checkbox" >Transferable Life-insurance policies<br/>
+<input autocomplete="off" type="checkbox" >Piercings, Tattoos, Scarification<br/>
+<input autocomplete="off" type="checkbox" >inoluntary drug testing, trials, and screening<br/>
+<input autocomplete="off" type="checkbox" >Secret Shopper, Angies List, Yelp reviews<br/>
+<input autocomplete="off" type="checkbox" >Job Search, Dice, Monster, Indeed, Recruiters<br/>
+<input autocomplete="off" type="checkbox" >Checking, Credit Restoration<br/>
+<input autocomplete="off" type="checkbox" >Van-Life, and offgrid<br/>
+<input autocomplete="off" type="checkbox" >Fishing, Hunting, Outdoors<br/>
+<input autocomplete="off" type="checkbox" >NSFW, *Hub, lingerie<br/>
 </div>
 
 <div class="col4">
@@ -506,51 +507,52 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div class="col3">
-<input type="checkbox" >Sport Cars, On and Off-Road Racing, and Rally<br/>
-<input type="checkbox" >Sports: Horse racing, NFL, PGA Golf, MLB Baseball<br/>
-<input type="checkbox" >Phone and mobile hardware, social media<br/>
-<input type="checkbox" >Heavy Machining, Long Haul Trucking<br/>
-<input type="checkbox" >Commercial and Residential Real Estate<br/>
-<input type="checkbox" >Luxury appearal and jewelry<br/>
-<input type="checkbox" >Box Office Movies, Music, Entertainment<br/>
-<input type="checkbox" >Vacation, Holiday, and travel<br/>
-<input type="checkbox" >Pay-Day and Same-Day Loans, Mortgage Refinancing<br/>
-<input type="checkbox" >OTC, Prescription, and Pharamacy<br/>
-<input type="checkbox" >Coupons, Daily Deals<br/>
-<input type="checkbox" >BOA,Capital One,Chase,wells fargo,citigroup<br/>
-<input type="checkbox" >Laptop, Desktop, AMD vs Intel<br/>
-<input type="checkbox" >Turbo Tax, Tax Act, H&R Block<br/>
-<input type="checkbox" >AARP, Carnival Cruise, Royal Caribbean<br/>
-<input type="checkbox" >mesothelioma lawsuit<br/>
-<input type="checkbox" >DOT Prison currency transfers<br/>
-<input type="checkbox" >Crimiminal attorney,BailBonds <br/>
+<input autocomplete="off" type="checkbox" >Sport Cars, On and Off-Road Racing, and Rally<br/>
+<input autocomplete="off" type="checkbox" >Sports: Horse racing, NFL, PGA Golf, MLB Baseball<br/>
+<input autocomplete="off" type="checkbox" >Phone and mobile hardware, social media<br/>
+<input autocomplete="off" type="checkbox" >Heavy Machining, Long Haul Trucking<br/>
+<input autocomplete="off" type="checkbox" >Commercial and Residential Real Estate<br/>
+<input autocomplete="off" type="checkbox" >Luxury appearal and jewelry<br/>
+<input autocomplete="off" type="checkbox" >Box Office Movies, Music, Entertainment<br/>
+<input autocomplete="off" type="checkbox" >Vacation, Holiday, and travel<br/>
+<input autocomplete="off" type="checkbox" >Pay-Day and Same-Day Loans, Mortgage Refinancing<br/>
+<input autocomplete="off" type="checkbox" >OTC, Prescription, and Pharamacy<br/>
+<input autocomplete="off" type="checkbox" >Coupons, Daily Deals<br/>
+<input autocomplete="off" type="checkbox" >BOA,Capital One,Chase,wells fargo,citigroup<br/>
+<input autocomplete="off" type="checkbox" >Laptop, Desktop, AMD vs Intel<br/>
+<input autocomplete="off" type="checkbox" >Turbo Tax, Tax Act, H&R Block<br/>
+<input autocomplete="off" type="checkbox" >AARP, Carnival Cruise, Royal Caribbean<br/>
+<input autocomplete="off" type="checkbox" >mesothelioma lawsuit<br/>
+<input autocomplete="off" type="checkbox" >Contract Breach audits<br/>
+<input autocomplete="off" type="checkbox" >DOT Prison currency transfers<br/>
+<input autocomplete="off" type="checkbox" >Crimiminal attorney,BailBonds <br/>
 
 </div>
 <div class="col3" style="font-size: 80% !important">
 <h4>MailBait Pro+ Categories</h4>
-<input type="checkbox" >STD diagnosis and treatments<br/>
-<input type="checkbox" >Personal Escort services<br/>
-<input type="checkbox" >Mammalian genital enhancement<br/>
-<input type="checkbox" >DWI/DUI loss of vehicle license therapy<br/>
-<input type="checkbox" >Bath salts and recreational creativity<br/>
-<input type="checkbox" >One way vacations<br/>
-<input type="checkbox" >Reptile husbandry<br/>
-<input type="checkbox" >Darkweb entrapment<br/>
-<input type="checkbox" >unlawful termination, workman's comp, and the investigators that find them<br/>
-<input type="checkbox" >Remote surveillance of the paranoid<br/>
-<input type="checkbox" >Vehicle repossession enrollmeny<br/>
-<input type="checkbox" >Phone tracking enrollment<br/>
-<input type="checkbox" >Jury duty auto enrollment<br/>
-<input type="checkbox" >IRS/Tax auditing enrollment<br/>
-<input type="checkbox" >Asset forfeiture and seizure enrollment<br/>
-<input type="checkbox" >Gun ownership state audits and registration<br/>
-<input type="checkbox" >Pet cloning<br/>
-<input type="checkbox" >End of life photography<br/>
-<input type="checkbox" >bikini-hair removal<br/>
-<input type="checkbox" >Rectal Rodeo clowns<br/>
-<input type="checkbox" >Lien enforcement<br/>
-<input type="checkbox" >Identify and Credit Theft verification<br/>
-<input type="checkbox" >Ransomware, Cryptoware opt-in<br/>
+<input autocomplete="off" type="checkbox" >STD diagnosis and treatments<br/>
+<input autocomplete="off" type="checkbox" >Personal Escort services<br/>
+<input autocomplete="off" type="checkbox" >Mammalian genital enhancement<br/>
+<input autocomplete="off" type="checkbox" >DWI/ DUI loss of vehicle license therapy<br/>
+<input autocomplete="off" type="checkbox" >Bath salts and recreational creativity<br/>
+<input autocomplete="off" type="checkbox" >One way vacations<br/>
+<input autocomplete="off" type="checkbox" >Reptile husbandry<br/>
+<input autocomplete="off" type="checkbox" >Darkweb entrapment<br/>
+<input autocomplete="off" type="checkbox" >unlawful termination, workman's comp, and the investigators that find them<br/>
+<input autocomplete="off" type="checkbox" >Remote surveillance of the paranoid<br/>
+<input autocomplete="off" type="checkbox" >Vehicle repossession enrollment<br/>
+<input autocomplete="off" type="checkbox" >Phone tracking enrollment<br/>
+<input autocomplete="off" type="checkbox" >Jury duty auto enrollment<br/>
+<input autocomplete="off" type="checkbox" >IRS/Tax auditing enrollment<br/>
+<input autocomplete="off" type="checkbox" >Asset forfeiture and seizure enrollment<br/>
+<input autocomplete="off" type="checkbox" >Gun ownership state audits and registration<br/>
+<input autocomplete="off" type="checkbox" >Pet cloning<br/>
+<input autocomplete="off" type="checkbox" >End of life photography<br/>
+<input autocomplete="off" type="checkbox" >bikini-hair removal<br/>
+<input autocomplete="off" type="checkbox" >Rectal Rodeo clowns<br/>
+<input autocomplete="off" type="checkbox" >Lien enforcement<br/>
+<input autocomplete="off" type="checkbox" >Identify and Credit Theft verification<br/>
+<input autocomplete="off" type="checkbox" >Ransomware, Cryptoware opt-in<br/>
 </div>
 
 
