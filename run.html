@@ -435,6 +435,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <select name="speed" id="speed">
   <option selected="selected" value="5000">12 per minute</option>
 </select>
+<input id="categories" type="checkbox" checked="checked">Show Mail Categories
 
 <!--
 <label for="windowclose">Popups</label>
@@ -443,7 +444,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <label for="pause" id="pauselbl">Stop (MailBait is currrently <a href="#running1">running below</a>. This tab must remain open.)</label>
 <div style="display:none;"> <input type="checkbox" name="pause" id="pause" value="true" /> Pause progress <br/> </div>
-<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Stop (MailBait is currently <a href='#running1'>running below</a>. This tab must remain open.)';};" />
+<input id="pausebtn" type="submit" value="Pause MailBait" onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently PAUSED)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Stop (MailBait is currently <a href=#running1>running below</a>. This tab must remain open.)';};" />
 
 </div>
 </div>
@@ -538,13 +539,15 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <input type="checkbox" >Vehicle repossession enrollmeny<br/>
 <input type="checkbox" >Phone tracking enrollment<br/>
 <input type="checkbox" >Jury duty auto enrollment<br/>
-<input type="checkbox" >Automatic Tax auditing<br/>
+<input type="checkbox" >IRS/Tax auditing enrollment<br/>
 <input type="checkbox" >Asset forfeiture and seizure enrollment<br/>
 <input type="checkbox" >Gun ownership state audits and registration<br/>
 <input type="checkbox" >Pet cloning<br/>
 <input type="checkbox" >End of life photography<br/>
 <input type="checkbox" >bikini-hair removal<br/>
 <input type="checkbox" >Rectal Rodeo clowns<br/>
+<input type="checkbox" >Lien enforcement<br/>
+<input type="checkbox" >Identify and Credit Theft verification<br/>
 <input type="checkbox" >Ransomware, Cryptoware opt-in<br/>
 </div>
 
