@@ -38,6 +38,29 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 <![endif]-->
+
+<style>
+.glow {
+  font-size:;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+  }
+}
+
+</style>
+</style>
 </head>
 
 <body id="home">
@@ -64,7 +87,7 @@
 <section class="row" id="features">
           
 <div class="col1_3">
-<h2>Fill your INBOX.</h2>
+<h2>Fill your INBOX. <span class='glow' style='font-size:10px;'> Improved! </span></h2>
 <nav><ul class="pagination"><li><a href="run.html" title="Home" class="run" style="width: 100%;font-size: 1.75em;font-weight:bold;"> Click Here to Start </a></li></ul></nav>
 <p><a href="https://tinyletter.com/mailbait">Join the mailing list</a> for notification of new features.</a></p>
 
