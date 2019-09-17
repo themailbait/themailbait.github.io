@@ -71,7 +71,10 @@ Testing/validation:
 <div>
 S<input type="text" id="dt1" name="dt1" style="width:100px;" /><Br/>
 L<input type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
-<input type=submit id="gen" style="width:75px;" value="GEN" onClick='console.log ( gen1(document.getElementById("dt1").value,document.getElementById("dr1").value) ) ; return false;' /><Br/>
+
+
+
+<input type=submit id="gen" style="width:75px;" value="GEN" onClick="document.getElementById('out').innerHTML += gen1(document.getElementById('dt1').value,document.getElementById('dr1').value) ; return false;" /><Br/>
 
 <div id="out">
 </div>
@@ -82,12 +85,6 @@ L<input type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
 
 document.getElementById('dt1').value=Date.now();
 document.getElementById('dr1').value='3';
-console.log(document.getElementById('dt1').value);
-var date2 = new Date(document.getElementById('dt1').value); 
-var dt = Math.round((Date.now() - date2)/(1000*60*60*24)) -1;
-var dt1 = dt + 1000;
-
-document.write("<Br/>tets " + dt1);
 
 var B10="0123456789";
 var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
@@ -110,6 +107,7 @@ return res;}
 //document.write("<br/>");
 
 function gen1(dt1,dr1){
+var out = '';
 var date1 = new Date('2019-01-01T00:00:00');1568
 console.log(dt1);
 
@@ -119,7 +117,7 @@ var date2 = new Date(dt1);
 var dt = Math.round((date2 - date1)/(1000*60*60*24)) -1;
 var dt1 = (dt * 2) + 1001;
 
-document.write("<Br/>test" + dt1);
+console.log("<Br/>test" + dt1);
 
 n = dt1 + "";
 
@@ -130,28 +128,28 @@ console.log("<Br/>Reverse: " +n);
 
 n2 = n + dr1;
 
-console.log("<Br/><Br/>" +n2);
-console.log("<Br/>" +convert(n2,B10,B32));
+out += "<Br/><Br/>" +n2;
+out += "<Br/>" +convert(n2,B10,B32);
 
 n3 = n + '0' + dr1;
 
-console.log("<br/><Br/>" +n3);
-console.log("<Br/>" +convert(n3,B10,B32));
+out += "<br/><Br/>" +n3;
+out += "<Br/>" +convert(n3,B10,B32);
 1568
 n4 = n + '00' + dr1;
 
-console.log("<br/><Br/>" +n4);
-console.log("<Br/>" +convert(n4,B10,B32));
+out += "<br/><Br/>" +n4;
+out += "<Br/>" +convert(n4,B10,B32);
 
 
 var n44 =  convert(n4,B10,B32);
 var test = convert(n44,B32,B10);
-console.log("<br/><Br/>test  " +n44);
-console.log("<br/><Br/>test  " +test);
+out += "<br/><Br/>test  " +n44;
+out += "<br/><Br/>test  " +test;
 var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
-console.log("<br/><Br/>days from jan1 2019:  " +d);
+out += "<br/><Br/>days from jan1 2019:  " +d;
 var t = test.slice(5,10)
-console.log("<br/><Br/>days valid:  " +t);
+out += "<br/><Br/>days valid:  " +t;
 
 Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
 var d2 =  Date.parse("01/01/2019");
@@ -163,10 +161,10 @@ var date2 = new Date('2019-01-01T00:00:00');
 var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
 
-console.log("<br/><Br/>startdate:  " +  star);
-console.log("<br/><Br/>end date:  " +  endd);
-console.log("<br/><Br/>now >= sdate:  " + (date>= star));
-console.log("<br/><Br/>now return<= endd:  " + (endd>=date));
+out += "<br/><Br/>startdate:  " +  star;
+out += "<br/><Br/>end date:  " +  endd;
+out += "<br/><Br/>now >= sdate:  " + (date>= star);
+out += "<br/><Br/>now return<= endd:  " + (endd>=date);
 
 //check;
 // if current day //var dt = Math.round((Date.now() - Date.parse("asdf01/01/2019"))/(1000*60*60*24));
@@ -180,7 +178,7 @@ console.log("<br/><Br/>now return<= endd:  " + (endd>=date));
 
 
 
- //return false;
+ return out;
 }
 
 </script>
