@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <style>
 body {
@@ -26,10 +27,11 @@ body {
 <div style="color:grey;display:inline;overflow:hidden;font-size: 8px;white-space: pre;font-family: monospace;float:left;">
 |============================================================|
 |  __  __       _ _ ____        _ _     ____  ____   ___     |
-| |  \/  | __ _(_) | __ )  __ _(_) |_  |  _ \|  _ \ / _ \    |
+| |  \/  | __ _(_) | __ )  __ _(_) |_  |  _ \|  _ \ / _ \ +  |
 | | |\/| |/ _` | | |  _ \ / _` | | __| | |_) | |_) | | | |   |
 | | |  | | (_| | | | |_) | (_| | | |_  |  __/|  _ <| |_| |   |
-| |_|  |_|\__,_|_|_|____/ \__,_|_|\__| |_|   |_| \_\\___/r2  |
+| |_|  |_|\__,_|_|_|____/ \__,_|_|\__| |_|   |_| \_\\___/    |
+|                                                            |
 |============================================================|
   Cracked:   9/1/2019   || Encryption: JS 3 phase key,rot32
     Group: FUSION CORE  || Shout outs: K2, diCe, CLaSSy
@@ -66,7 +68,27 @@ Testing/validation:
 </div>
 
 
+<div>
+S<input type="text" id="dt1" name="dt1" style="width:100px;" /><Br/>
+L<input type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
+<input type=submit id="gen" style="width:75px;" value="GEN" onClick='console.log ( gen1(document.getElementById("dt1").value,document.getElementById("dr1").value) ) ; return false;' /><Br/>
+
+<div id="out">
+</div>
+</div>
+
+
 <script>
+
+document.getElementById('dt1').value=Date.now();
+document.getElementById('dr1').value='3';
+console.log(document.getElementById('dt1').value);
+var date2 = new Date(document.getElementById('dt1').value); 
+var dt = Math.round((Date.now() - date2)/(1000*60*60*24)) -1;
+var dt1 = dt + 1000;
+
+document.write("<Br/>tets " + dt1);
+
 var B10="0123456789";
 var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 function convert(src,srctable,desttable)
@@ -79,47 +101,57 @@ var r=val%destlen;var res=desttable.charAt(r);var q=Math.floor(val/destlen);whil
 return res;}
 
 
-console.log(convert("123456",B10,B32))
-console.log(convert("5SL2",B32,B10))
-document.write("test<br/>");
+//console.log(convert("123456",B10,B32))
+//console.log(convert("5SL2",B32,B10))
+//document.write("test<br/>");
 
 
-document.write("<br/>");
-var date2 = new Date('2019-01-01T00:00:00');
-var dt = Math.round((Date.now() - date2)/(1000*60*60*24)) -1;
-var dt1 = dt + 1000;
 
-document.write("<Br/>" + dt1);
+//document.write("<br/>");
+
+function gen1(dt1,dr1){
+var date1 = new Date('2019-01-01T00:00:00');1568
+console.log(dt1);
+
+//document.getElementById("dt1").
+
+var date2 = new Date(dt1); 
+var dt = Math.round((date2 - date1)/(1000*60*60*24)) -1;
+var dt1 = (dt * 2) + 1001;
+
+document.write("<Br/>test" + dt1);
 
 n = dt1 + "";
+
 n= n.split("").reverse().join("");
 
-document.write("<Br/>" +n);
+console.log("<Br/>Reverse: " +n);
 
-n2 = n + "3";
 
-document.write("<Br/><Br/>" +n2);
-document.write("<Br/>" +convert(n2,B10,B32));
+n2 = n + dr1;
 
-n3 = n + "03";
+console.log("<Br/><Br/>" +n2);
+console.log("<Br/>" +convert(n2,B10,B32));
 
-document.write("<br/><Br/>" +n3);
-document.write("<Br/>" +convert(n3,B10,B32));
+n3 = n + '0' + dr1;
 
-n4 = n + "003";
+console.log("<br/><Br/>" +n3);
+console.log("<Br/>" +convert(n3,B10,B32));
+1568
+n4 = n + '00' + dr1;
 
-document.write("<br/><Br/>" +n4);
-document.write("<Br/>" +convert(n4,B10,B32));
+console.log("<br/><Br/>" +n4);
+console.log("<Br/>" +convert(n4,B10,B32));
 
 
 var n44 =  convert(n4,B10,B32);
 var test = convert(n44,B32,B10);
-document.write("<br/><Br/>test  " +n44);
-document.write("<br/><Br/>test  " +test);
-var d = test.slice(0, 4).split("").reverse().join("") - 1000;
-document.write("<br/><Br/>days from jan1 2019:  " +d);
+console.log("<br/><Br/>test  " +n44);
+console.log("<br/><Br/>test  " +test);
+var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
+console.log("<br/><Br/>days from jan1 2019:  " +d);
 var t = test.slice(5,10)
-document.write("<br/><Br/>days valid:  " +t);
+console.log("<br/><Br/>days valid:  " +t);
 
 Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
 var d2 =  Date.parse("01/01/2019");
@@ -131,18 +163,25 @@ var date2 = new Date('2019-01-01T00:00:00');
 var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
 
-document.write("<br/><Br/>startdate:  " +  star);
-document.write("<br/><Br/>end date:  " +  endd);
-document.write("<br/><Br/>now >= sdate:  " + (date>= star));
-document.write("<br/><Br/>now <= endd:  " + (endd>=date));
+console.log("<br/><Br/>startdate:  " +  star);
+console.log("<br/><Br/>end date:  " +  endd);
+console.log("<br/><Br/>now >= sdate:  " + (date>= star));
+console.log("<br/><Br/>now return<= endd:  " + (endd>=date));
 
 //check;
-// if current day //var dt = Math.round((Date.now() - Date.parse("01/01/2019"))/(1000*60*60*24));
+// if current day //var dt = Math.round((Date.now() - Date.parse("asdf01/01/2019"))/(1000*60*60*24));
 // is >= XXXX - 1000  or <= XXXX-1000+Y
 
 
 
 //convert("5SL2",B32,B10)
+
+
+
+
+
+ //return false;
+}
 
 </script>
 
@@ -161,15 +200,11 @@ window.cookieconsent.initialise({
   },
   "theme": "classic",
   "content": {
-    "message": "Mailbait uses cookies",
+    "message": "Mailbait uses cookies.  Enjoy.",
     "href": "http://mailbait.info/faq.html"
   }
 });
 </script>
-
-
-<div>
-</div>
 
 </body>
 </html>
