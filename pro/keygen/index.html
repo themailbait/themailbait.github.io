@@ -79,7 +79,7 @@ L<input autocomplete="off" type="text" id="dr1" name="dr1" style="width:100px;" 
 <div id="out">
 </div>
 
-<br/> Key<input autocomplete="off" type="text" id="Ky" name="Ky" style="width:100px;" /><Br/>
+<br/> K<input autocomplete="off" type="text" id="Ky" name="Ky" style="width:100px;" /><Br/>
 <input type=submit id="gen1" style="width:75px;" value="decode" onClick="document.getElementById('out1').innerHTML = decode(document.getElementById('Ky').value) ; return false;" /><Br/>
 <div id="out1">
 </div>
@@ -88,15 +88,16 @@ L<input autocomplete="off" type="text" id="dr1" name="dr1" style="width:100px;" 
 
 <script>
 
-document.getElementById('dt1').value=Date.now();
 
+//set default values for keygen
+//document.getElementById('dt1').value=Date.now();
 let current_datetime = new Date()
 let formatted_date = current_datetime.getFullYear() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getDate()
 document.getElementById('dt1').value=formatted_date;
-
-
 document.getElementById('dr1').value='3';
 
+
+//setup transcoder
 var B10="0123456789";
 var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 function convert(src,srctable,desttable)
@@ -109,88 +110,45 @@ var r=val%destlen;var res=desttable.charAt(r);var q=Math.floor(val/destlen);whil
 return res;}
 
 
-//console.log(convert("123456",B10,B32))
-//console.log(convert("5SL2",B32,B10))
-//document.write("test<br/>");
-
-
-
-//document.write("<br/>");
-
+//generate based on inputs
 function gen1(dt1,dr1){
 var out = '';
 var date1 = new Date('2019-01-01T00:00:00');1568
-console.log(dt1);
-
-//document.getElementById("dt1").
-
 var date2 = new Date(dt1); 
 var dt = Math.round((date2 - date1)/(1000*60*60*24)) -1;
 var dt1 = (dt * 2) + 1001;
 
-console.log("<Br/>test" + dt1);
-
 n = dt1 + "";
-
 n= n.split("").reverse().join("");
-
-console.log("<Br/>Reverse: " +n);
-
-
 n2 = n + '' + dr1;
-
-//out += "<Br/><Br/>" +n2;
-out += "<Br/>" +convert(n2,B10,B32);
-
+out += "<Br/> " +convert(n2,B10,B32);
 n3 = n + '0' + dr1;
-
-//out += "<br/><Br/>" +n3;
-out += "<Br/>" +convert(n3,B10,B32);
+out += "<Br/> " +convert(n3,B10,B32);
 n4 = n + '00' + dr1;
-
-//out += "<br/><Br/>" +n4;
-out += "<Br/>" +convert(n4,B10,B32);
-
-//check;
-// if current day //var dt = Math.round((Date.now() - Date.parse("asdf01/01/2019"))/(1000*60*60*24));
-// is >= XXXX - 1000  or <= XXXX-1000+Y
-
-//convert("5SL2",B32,B10)
-
+out += "<Br/> " +convert(n4,B10,B32);
  return out;
 }
 
 function decode(test1){
-//var n44 =  convert(n4,B10,B32);
 var test = convert(test1,B32,B10);
 out = '<Br/>decoded raw' + test;
-//out += "<br/><Br/>test  " +n44;
-//out += "<br/><Br/>test  " +test;
 var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
-out += "<br/><Br/>days from jan1 2019:  " +d;
+out += "<br/>days from jan1 2019:  " +d;
 var t = test.slice(4,10)
-out += "<br/><Br/>days valid:  " +t;
-
+out += "<br/>days valid:  " +t;
 Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
 var d2 =  Date.parse("01/01/2019");
 var date = new Date();
-
 var date2 = new Date('2019-01-01T00:00:00');
-
-
 var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
-
-out += "<br/><Br/>startdate:  " +  star;
-out += "<br/><Br/>end date:  " +  endd;
-out += "<br/><Br/>now >= sdate:  " + (date>= star);
-out += "<br/><Br/>now return<= endd:  " + (endd>=date);
+out += "<br/>startdate:  " +  star;
+out += "<br/>end date:  " +  endd;
+out += "<br/>now >= sdate:  " + (date>= star);
+out += "<br/>now return<= endd:  " + (endd>=date);
 return out;
 }
-
 </script>
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
