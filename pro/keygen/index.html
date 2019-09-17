@@ -69,14 +69,19 @@ Testing/validation:
 
 
 <div>
-S<input type="text" id="dt1" name="dt1" style="width:100px;" /><Br/>
-L<input type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
+S<input autocomplete="off" type="text" id="dt1" name="dt1" style="width:100px;" /><Br/>
+L<input autocomplete="off" type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
 
 
 
-<input type=submit id="gen" style="width:75px;" value="GEN" onClick="document.getElementById('out').innerHTML += gen1(document.getElementById('dt1').value,document.getElementById('dr1').value) ; return false;" /><Br/>
+<input type=submit id="gen" style="width:75px;" value="GEN" onClick="document.getElementById('out').innerHTML = gen1(document.getElementById('dt1').value,document.getElementById('dr1').value) ; return false;" /><Br/>
 
 <div id="out">
+</div>
+
+<br/> Key<input autocomplete="off" type="text" id="Ky" name="Ky" style="width:100px;" /><Br/>
+<input type=submit id="gen1" style="width:75px;" value="decode" onClick="document.getElementById('out1').innerHTML = decode(document.getElementById('Ky').value) ; return false;" /><Br/>
+<div id="out1">
 </div>
 </div>
 
@@ -84,6 +89,12 @@ L<input type="text" id="dr1" name="dr1" style="width:100px;" /><Br/>
 <script>
 
 document.getElementById('dt1').value=Date.now();
+
+let current_datetime = new Date()
+let formatted_date = current_datetime.getFullYear() + "-" + (current_datetime.getMonth() + 1) + "-" + current_datetime.getDate()
+document.getElementById('dt1').value=formatted_date;
+
+
 document.getElementById('dr1').value='3';
 
 var B10="0123456789";
@@ -126,29 +137,38 @@ n= n.split("").reverse().join("");
 console.log("<Br/>Reverse: " +n);
 
 
-n2 = n + dr1;
+n2 = n + '' + dr1;
 
-out += "<Br/><Br/>" +n2;
+//out += "<Br/><Br/>" +n2;
 out += "<Br/>" +convert(n2,B10,B32);
 
 n3 = n + '0' + dr1;
 
-out += "<br/><Br/>" +n3;
+//out += "<br/><Br/>" +n3;
 out += "<Br/>" +convert(n3,B10,B32);
-1568
 n4 = n + '00' + dr1;
 
-out += "<br/><Br/>" +n4;
+//out += "<br/><Br/>" +n4;
 out += "<Br/>" +convert(n4,B10,B32);
 
+//check;
+// if current day //var dt = Math.round((Date.now() - Date.parse("asdf01/01/2019"))/(1000*60*60*24));
+// is >= XXXX - 1000  or <= XXXX-1000+Y
 
-var n44 =  convert(n4,B10,B32);
-var test = convert(n44,B32,B10);
-out += "<br/><Br/>test  " +n44;
-out += "<br/><Br/>test  " +test;
+//convert("5SL2",B32,B10)
+
+ return out;
+}
+
+function decode(test1){
+//var n44 =  convert(n4,B10,B32);
+var test = convert(test1,B32,B10);
+out = '<Br/>decoded raw' + test;
+//out += "<br/><Br/>test  " +n44;
+//out += "<br/><Br/>test  " +test;
 var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
 out += "<br/><Br/>days from jan1 2019:  " +d;
-var t = test.slice(5,10)
+var t = test.slice(4,10)
 out += "<br/><Br/>days valid:  " +t;
 
 Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
@@ -165,20 +185,7 @@ out += "<br/><Br/>startdate:  " +  star;
 out += "<br/><Br/>end date:  " +  endd;
 out += "<br/><Br/>now >= sdate:  " + (date>= star);
 out += "<br/><Br/>now return<= endd:  " + (endd>=date);
-
-//check;
-// if current day //var dt = Math.round((Date.now() - Date.parse("asdf01/01/2019"))/(1000*60*60*24));
-// is >= XXXX - 1000  or <= XXXX-1000+Y
-
-
-
-//convert("5SL2",B32,B10)
-
-
-
-
-
- return out;
+return out;
 }
 
 </script>
