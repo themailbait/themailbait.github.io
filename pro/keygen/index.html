@@ -125,6 +125,7 @@ out += "<Br/> " +convert(n2,B10,B32);
 n3 = n + '0' + dr1;
 out += "<Br/> " +convert(n3,B10,B32);
 n4 = n + '00' + dr1;
+document.getElementById('Ky').value=convert(n4,B10,B32);
 out += "<Br/> " +convert(n4,B10,B32);
  return out;
 }
@@ -167,6 +168,18 @@ window.cookieconsent.initialise({
     "href": "http://mailbait.info/faq.html"
   }
 });
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23915961-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
 
 </body>
