@@ -70,8 +70,8 @@ Testing/validation:
 
 
 <div>
-<input autocomplete="off" type="text" id="dt1" name="dt1" style="width:100px;" /><Br/>
-<input autocomplete="off" type="text" id="dr1" name="dr1" style="width:100px;"   disabled /><Br/>
+<input autocomplete="off" type="text" id="dt1" name="dt1" style="width:80px;" />
+<input autocomplete="off" type="text" id="dr1" name="dr1" style="width:25px;"   disabled /><Br/>
 
 
 
@@ -80,7 +80,7 @@ Testing/validation:
 <div id="out">
 </div>
 
-<br/><input autocomplete="off" type="text" id="Ky" name="Ky" style="width:100px;" /><Br/>
+<br/><input autocomplete="off" type="text" id="Ky" name="Ky" style="width:110px;" /><Br/>
 <input type=submit id="gen1" style="width:110px;" value="Decode Key" onClick="document.getElementById('out1').innerHTML = decode(document.getElementById('Ky').value) ; return false;" /><Br/>
 <div id="out1">
 </div>
@@ -135,9 +135,9 @@ if ( testkey(convert(n4,B10,B32)) == false){out = 'parameters invalid';};
 
 function decode(test1){
 if (testkey(test1)){
-var out = '<Br/>Valid NOW(): <span style="color:green;"> VALID </span>' ;
+var out = '<Br/>Valid now: <span style="color:green;"> VALID </span>' ;
 } else {
-var out = '<Br/>Valid NOW(): <span style="color:RED;"> INVALID </span>' ;
+var out = '<Br/>Valid now: <span style="color:RED;"> INVALID </span>' ;
 }
 
 try {
@@ -155,8 +155,8 @@ var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
 out += "<br/>startdate:  " +  star;
 out += "<br/>enddate:  " +  endd;
-out += "<br/>now >= sdate:  " + (date>= star);
-out += "<br/>now <= endd:  " + (endd>=date);
+out += "<br/>now >= startdate:  " + (date>= star);
+out += "<br/>now <= enddate:  " + (endd>=date);
 out += "<br/>duration <= 99:  " + (t<100);
 } catch(err) {
 console.log(err);
