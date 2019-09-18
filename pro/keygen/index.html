@@ -16,6 +16,11 @@ body {
   color:white;
 }
 
+a { color: inherit; } 
+.seg{
+padding:10px 2px 10px 2px;
+background: rgba(151, 151, 19, 0.025)
+}
 
 </style>
 
@@ -36,10 +41,9 @@ body {
   Cracked:   9/1/2019   || Encryption: JS 3 phase key,rot32
     Group:  SCRAPEgoAT  || Shout outs: K2, diCe, CLaSSy
 
-           Category: Mail Generator, ML, web spider
-           KEYGEN:   http://mailbait.info/login.html
+             Category:   Mail Generator, ML, web spider
+        KEYGEN Target:   <a href="http://mailbait.info/login.html">http://mailbait.info/login.html</a>
 -------------------------------------------------------------
-
 Pro: Test Referrer, rolling history, 
   filter by unknown, tested, tested inbox, age
   http:/http filter; filter by age, filter by source
@@ -62,26 +66,34 @@ Pro: Test Referrer, rolling history,
 * Storage ERD:
   #, ID Base32 so can put in email, url, post/get, http/https:type
   source, 1st seen date, last validated date, 
-  recieved inbox, recieved in spamhttps://www.ascii-art-generator.org/
+  recieved inbox, recieved in spam
 Testing/validation:
   push out trial testing to general users, evey 10'th post?
 
 </div>
 
 
-<div>
+<div class="seg">
+
+<input type=submit id="gen" style="width:110px;" value="Pro Keys" onClick="document.getElementById('out').innerHTML = gen1(document.getElementById('dt1').value,document.getElementById('dr1').value) ; return false;" /><Br/>
+
 <input autocomplete="off" type="text" id="dt1" name="dt1" style="width:80px;" />
 <input autocomplete="off" type="text" id="dr1" name="dr1" style="width:25px;"   disabled /><Br/>
 
 
 
-<input type=submit id="gen" style="width:110px;" value="Pro Keys" onClick="document.getElementById('out').innerHTML = gen1(document.getElementById('dt1').value,document.getElementById('dr1').value) ; return false;" /><Br/>
 
-<div id="out">
-</div>
 
-<br/><input autocomplete="off" type="text" id="Ky" name="Ky" style="width:110px;" /><Br/>
+<div id="out"></div>
+<div>
+
+<br/>
+
+<div class="seg">
 <input type=submit id="gen1" style="width:110px;" value="Decode Key" onClick="document.getElementById('out1').innerHTML = decode(document.getElementById('Ky').value) ; return false;" /><Br/>
+
+<input autocomplete="off" type="text" id="Ky" name="Ky" style="width:110px;" /><Br/>
+
 <div id="out1">
 </div>
 </div>
@@ -129,35 +141,36 @@ n4 = n + '00' + dr1;
 document.getElementById('Ky').value=convert(n4,B10,B32);
 out += "<Br/> " +convert(n4,B10,B32);
 
-if ( testkey(convert(n4,B10,B32)) == false){out = 'parameters invalid';};
+if ( testkey(convert(n4,B10,B32)) == false){out += '<Br/>inactive';};
  return out;
 }
 
 function decode(test1){
 if (testkey(test1)){
-var out = '<Br/>Valid now: <span style="color:green;"> VALID </span>' ;
+var out = '<Br/> <span style="color:green;"> VALID </span>' ;
 } else {
-var out = '<Br/>Valid now: <span style="color:RED;"> INVALID </span>' ;
+var out = '<Br/> <span style="color:RED;"> INVALID </span>' ;
 }
 
 try {
 var test = convert(test1,B32,B10);
-out += '<Br/>decoded raw:  ' + test;
+out += '<span style="font-size:10px;"><Br/>Raw Decoding:  ' + test;
 var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
-out += "<br/>days from jan1 2019:  " +d;
+out += "<br/>Days > 2019-01-01:  " +d;
 var t = test.slice(4,10)
-out += "<br/>duration days valid:  " +t;
+out += "<br/>Duration Days:  " +t;
 Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
 var d2 =  Date.parse("01/01/2019");
 var date = new Date();
 var date2 = new Date('2019-01-01T00:00:00');
 var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
-out += "<br/>startdate:  " +  star;
-out += "<br/>enddate:  " +  endd;
-out += "<br/>now >= startdate:  " + (date>= star);
-out += "<br/>now <= enddate:  " + (endd>=date);
-out += "<br/>duration <= 99:  " + (t<100);
+out += "<br/>Start:  " +  star.toLocaleString();
+out += "<br/>End:  " +  endd.toLocaleString();
+out += "<br/>Started:  " + (date>= star);
+out += "<br/>Ended:  " + (endd<=date);
+out += "<br/>Duration <= 99:  " + (t<100);
+out += "</span>";
 } catch(err) {
 console.log(err);
 out = 'Key Invalid';
