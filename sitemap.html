@@ -7,6 +7,11 @@
 <meta name="robots" content="index, follow" />
 <meta name="abstract" content="MailBait table of contents sitemap.">
 <style type="text/css">
+.containerkey{
+  /* --pro pro+ key blocks */
+  display:none;
+}
+
 body {
 background-color: #DDD;
 font: normal 80%  "Trebuchet MS", "Helvetica", sans-serif;
@@ -99,15 +104,16 @@ font-weight:bold;
 <div id="cont">
 <h1>MailBait Site Map</h1>
 <h3><a href="index.html">Homepage</a>
-Last updated: 2019, Sep 13
+Last updated: 2019, Sep 19
 </h3>
 
+<div class="containerkey">pro tools active.</div>
 
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 
 <tr valign="top">
 <td class="lpart" colspan="100"><div class="lhead">/
-<span class="lcount">7 pages</span></div>
+<span class="lcount">8 pages</span></div>
 
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 
@@ -137,12 +143,13 @@ document.getElementById('footer').innerHTML = 'Mailbait | Copyright &copy; ' + n
 
 
 <script>
+// MAILBAITPRO keys available from , oh, wait.  they aren't.  get out of this code.
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   var expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+} //setcookie
 
 function getCookie(cname) {
   var name = cname + "=";
@@ -157,19 +164,63 @@ function getCookie(cname) {
     }
   }
   return "";
-}
+} //getcookie
 
-function checkCookie() {
-  var user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
+function setKey(key){
+  if (key != "" && key != null) {
+      setCookie("key", key, 365);
   }
-} 
+} //setKey
+
+checkKey();
+function checkKey() {
+  var key = getCookie("key");
+  if (MakeAppleSauce(key)==true) {
+    //alert("Welcome again " + key);
+    var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
+    for(var i=0; i<elements.length; i++){
+        elements[i].style.display = "inline"; 
+    }
+  } else {
+    //key = prompt("Please enter your key:", "");
+    //setKey(key);
+  }
+} //checkKey
+
+//setup adsense2
+function divedeep(src,srctable,desttable)
+{var srclen=srctable.length;var destlen=desttable.length;var val=0;var numlen=src.length;for(var i=0;i<numlen;i++)
+{val=val*srclen+srctable.indexOf(src.charAt(i));}
+if(val<0)
+{return 0;}
+var r=val%destlen;var res=desttable.charAt(r);var q=Math.floor(val/destlen);while(q)
+{r=q%destlen;q=Math.floor(q/destlen);res=desttable.charAt(r)+res;}
+return res;} //adsense2
+
+function MakeAppleSauce(seed){
+try {
+var B10="0123456789";
+var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+var test = divedeep(seed,B32,B10);
+var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
+var t = test.slice(4,10)
+Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
+var d2 =  Date.parse("01/01/2019");
+var date = new Date();
+var date2 = new Date('2019-01-01T00:00:00');
+var star = date2.addDays(d);
+var endd = date2.addDays(d).addDays(t);
+if ((date>= star) && (endd>=date) && (t<100) ) {
+out = true;
+} else {
+out = false;
+}
+} catch(err) {
+console.log(err);
+out = false;
+}
+return out;
+}  //makeapplesauce
 </script>
 
 </div>

@@ -38,6 +38,13 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 <![endif]-->
+
+<style>
+.containerkey{
+  /* --pro pro+ key blocks */
+  display:none;
+}
+</style>
 </head>
 
 <body id="add1">
@@ -54,6 +61,7 @@
 <li><a href="add.html" title="Add Mail Source" class="add1">Add&nbsp;</a></li>
 <li><a href="block.html" title="Block email submission" class="block">Block</a></li>
 <li class="last"><a href="faq.html" title="Help and Frequently Asked Questions " class="faq">FAQ</a></li>
+<li class="last containerkey"><a style='color:red !important;' href="run.html#pro" title="Pro " class="faq">PRO</a></li>
 </ul>            
 </nav>
 </div>
@@ -375,6 +383,87 @@ if (countfound > 0){
     document.getElementById('add').innerHTML = ''
 }
 
+</script>
+
+<script>
+// MAILBAITPRO keys available from , oh, wait.  they aren't.  get out of this code.
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+} //setcookie
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+} //getcookie
+
+function setKey(key){
+  if (key != "" && key != null) {
+      setCookie("key", key, 365);
+  }
+} //setKey
+
+checkKey();
+function checkKey() {
+  var key = getCookie("key");
+  if (MakeAppleSauce(key)==true) {
+    //alert("Welcome again " + key);
+    var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
+    for(var i=0; i<elements.length; i++){
+        elements[i].style.display = "inline"; 
+    }
+  } else {
+    //key = prompt("Please enter your key:", "");
+    //setKey(key);
+  }
+} //checkKey
+
+//setup adsense2
+function divedeep(src,srctable,desttable)
+{var srclen=srctable.length;var destlen=desttable.length;var val=0;var numlen=src.length;for(var i=0;i<numlen;i++)
+{val=val*srclen+srctable.indexOf(src.charAt(i));}
+if(val<0)
+{return 0;}
+var r=val%destlen;var res=desttable.charAt(r);var q=Math.floor(val/destlen);while(q)
+{r=q%destlen;q=Math.floor(q/destlen);res=desttable.charAt(r)+res;}
+return res;} //adsense2
+
+function MakeAppleSauce(seed){
+try {
+var B10="0123456789";
+var B32="23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+var test = divedeep(seed,B32,B10);
+var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
+var t = test.slice(4,10)
+Date.prototype.addDays=function(d){return new Date(this.valueOf()+864E5*d);};
+var d2 =  Date.parse("01/01/2019");
+var date = new Date();
+var date2 = new Date('2019-01-01T00:00:00');
+var star = date2.addDays(d);
+var endd = date2.addDays(d).addDays(t);
+if ((date>= star) && (endd>=date) && (t<100) ) {
+out = true;
+} else {
+out = false;
+}
+} catch(err) {
+console.log(err);
+out = false;
+}
+return out;
+}  //makeapplesauce
 </script>
 
 </body>
