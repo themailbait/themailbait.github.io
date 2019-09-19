@@ -41,7 +41,7 @@
 <style>
 .containerkey{
   /* --pro pro+ key blocks */
-  display:none;
+  display:hidden;
 }
 </style>
 </head>
@@ -60,7 +60,7 @@
 <li><a href="add.html" title="Add Mail Source" class="add1">Add&nbsp;</a></li>
 <li><a href="block.html" title="Block email submission" class="add1">Block</a></li>
 <li class="last"><a href="faq.html" title="Help and Frequently Asked Questions " class="faq">FAQ</a></li>
-<li class="last containerkey"><a style='color:red !important;' href="run.html#pro" title="Pro " class="faq">PRO</a></li>
+<li class="containerkey" style="display:none"><a style='color:red !important;' href="run.html#pro" title="Pro " class="faq">PRO</a></li>
 
 </ul>            
 </nav>
@@ -161,7 +161,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="pro" style="display:none">
   <br/> <em>Pro Key invalid.</em>
 </div>
-<div class="containerkey"><br/>Pro tools active.  Click PRO in the header to learn more.</div>
+<div class="containerkey" style="display:none"><br/>Pro tools active.  Click PRO in the header to learn more.</div>
 
 <script>
 function ssetkey(){
@@ -275,15 +275,17 @@ function setKey(key){
 checkKey(); //as page loads, see if current key in cookie is valid.  unlock pro and pro+ if valid.
 function checkKey() {
   var key = getCookie("key");
+  var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
   if (MakeAppleSauce(key)==true) {
     //alert("Welcome again " + key);
-    var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
+    
     for(var i=0; i<elements.length; i++){
         elements[i].style.display = "inline"; 
     }
   } else {
-    //key = prompt("Please enter your key:", "");
-    //setKey(key);
+    for(var i=0; i<elements.length; i++){
+        elements[i].style.display = "none"; 
+    }
   }
 } //checkKey
 
