@@ -279,7 +279,9 @@ function reverse(s){
     return s.split("").reverse().join("");
 }
   
-  
+
+var active = "categories are skipped";
+
 function testform(){
 
 if (document.getElementById('pause').checked==false){
@@ -299,8 +301,6 @@ if (document.getElementById('pause').checked==false){
           case 's' : action = 'https://' + action.slice( 1 ); break;
         }
     
-  
-  
   
   document.forms['f0'].action=action;
   //JSON.items[i]['.mbm'] = '';
@@ -347,8 +347,9 @@ if (document.getElementById('pause').checked == false){
         per = (packcount/totalpacks)*100;  // draw progress of how far through all packs
         per =  per + ".00001";
         per = per.substring(0,4);
+
         if (per > 100) per = 100;
-  totalsgraph = "<h2>" + sends + " forms processed. <b>Pro and Pro+ categories are skipped.</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of "+totalpacks+" packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
+  totalsgraph = "<h2>" + sends + " forms processed. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of "+totalpacks+" packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
         
 
   per = (i/pCount)*100;  // draw progress of how far through this pack
@@ -460,6 +461,8 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 </div>
 </div>
+
+<div class="containerkey" style="width:100%"><br/>Pro tools current.  Extended Categories activated until key expires at <span id='active' name='active'></span></div>
 </section> 
 
 
@@ -630,8 +633,6 @@ google_ad_height = 90;
 </div>
 <div id="result" name="result" ></div>
 
-<div class="containerkey"><br/>Pro tools active.  Click PRO in the header to learn more here.</div>
-
 </div>
 </section> 
 
@@ -767,10 +768,12 @@ function setKey(key){
 } //setKey
 
 checkKey();
+
 function checkKey() {
   var key = getCookie("key");
   if (MakeAppleSauce(key)==true) {
     //alert("Welcome again " + key);
+    active = "categories are processed";
     var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
     for(var i=0; i<elements.length; i++){
         elements[i].style.display = "inline"; 
@@ -804,6 +807,7 @@ var date = new Date();
 var date2 = new Date('2019-01-01T00:00:00');
 var star = date2.addDays(d);
 var endd = date2.addDays(d).addDays(t);
+document.getElementById('active').innerHTML=endd; //show date
 if ((date>= star) && (endd>=date) && (t<100) ) {
 out = true;
 } else {
