@@ -91,10 +91,48 @@
 <div class="col9">
 
 <div>
+
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSc9OodpmQ2Ll6wlfcqkaNuYqQkDPA1g-8iSekEJbzVU_Uz4Xw/viewform?usp=sf_link 
+
+https://docs.google.com/forms/d/e/1FAIpQLSc9OodpmQ2Ll6wlfcqkaNuYqQkDPA1g-8iSekEJbzVU_Uz4Xw/formResponse
+
+name="entry.1498036372"  --optoutemail
+name="entry.418378684"   --action
+name="entry.1058225" --/other
+
+ name="entry.1429578454" //ip
+
+-->
 <h2>Block your email address from MailBait</h2>
 
-	Per request, a new feature is being constructed to update MailBait directly with a blacklist such that you can instruct MailBait to never allow any user to submit your email on MailBait. Check back soon. 
+	Per request, a new feature has been offered to update MailBait directly with a blacklist such that you can instruct MailBait to never allow any user to submit your email on MailBait. Please enter your email address and request the BLOCK option.  This address will be reviewed for integration into the MailBait core so it cannot be used on MailBait.  This does not unsubscribe you for other mail sources, or remove inbound email if you've alreayd actived MailBait in the past; but will prevent future use against your address.
 </div>
+<div>
+<br/>
+<h3>Request Email Blocking</h3>
+<form name="f2" id="f2" target="iframe2" action="https://docs.google.com/forms/d/e/1FAIpQLSc9OodpmQ2Ll6wlfcqkaNuYqQkDPA1g-8iSekEJbzVU_Uz4Xw/formResponse" method="POST">
+<fieldset>
+  
+
+  <label for="name">Email Address to ban from mailbait</label>
+  <input autocomplete="off" type="text" name="entry.1498036372" id="name"/>
+  
+  <label for="email">Action; please enter BLOCK or UNBLOCK</label>
+  <input autocomplete="off" type="text" name="entry.418378684" id="email" />
+  
+  <label for="pass">CAPTCHA; please enter a color that is not 3 letters.</label>
+  <input type="password" name="entry.1058225" id="pass"/>
+<input type="hidden" name="entry.1429578454" value="" id="ip1" /> <!-- ip -->
+</fieldset>
+  
+<button type="submit" onclick="document.getElementById('creatte').style.display='block';">Block EMAIL</button>
+<div id="creatte" style="display:none">
+  <br/> <em>Blocking email request submitted.  This is merged by hand back into the core of this website and will take some time.</em>
+</div>
+
+</form> 
+</div>
+
 <br/>
 <div>
 <h3>Filter and Mitigation</h3>
@@ -111,10 +149,34 @@ IF you recieve unwanted bulk email in general, setup email filtering by keyword,
 <hr class="marginbottom">
 <div class="col1_3"><h6><span id="footer-copyright"></span></h6><br/> </div>
 <div class="col1_3"><h6><a href="https://twitter.com/share" class="twitter-share-button" data-url="MailBait.info" data-text="Fill your inbox. MailBait.info">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h6> <br/></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/wi<h2>Create Account</h2>
+<form name="f2" id="f2" target="iframe2" action="https://docs.google.com/forms/d/1Dh2erHs6pdqBAG8tprXgBDN-XSjNJtYoyajr36hGFsk/formResponse?pli=1" method="POST">
+<fieldset>
+  
+
+  <label for="name">Name</label>
+  <input type="text" name="entry.1500239331" id="name"/>
+  
+  <label for="email">E-mail</label>
+  <input type="email" name="entry.1900711517" id="email" />
+  
+  <label for="pass">Password</label>
+  <input type="password" name="entry.45877131" id="pass"/>
+  <input type="hidden" name="entry.1356848538" value="" id="ip1" /> <!-- ip -->
+</fieldset>
+  
+<button type="submit" onclick="document.getElementById('creatte').style.display='block';">Create New Account</button>
+<div id="creatte" style="display:none">
+  <br/> <em>Account Creation locked. Community invite only until membership drops below 1200 active users.</em>
+</div>
+
+</form> dgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></h6> <br/></div>
 <div class="col1_3"><h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a></h6><br/></div>
 </footer>
 </div>
+
+<iframe name="iframe2" id="iframe2" src="about:none" frameborder="0" scrolling="no" style="visibility:hidden;height:1px;"></iframe> 
+ 
 
 
 <script type="text/javascript">
@@ -213,6 +275,14 @@ out = false;
 }
 return out;
 }  //makeapplesauce
+
+
+function CheckPro(json) {
+    console.log("NSA HoneyPot3 signaled: ", json.ip);
+    document.getElementById('ip1').value=json.ip;
+  }
 </script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=CheckPro"></script>
+
 </body>
 </html>
