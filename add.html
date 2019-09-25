@@ -246,7 +246,7 @@ function addInput() {
 
 
 
-//begin section of testing to iframe
+//begin section of testing to
 function addField (form, fieldType, fieldName, fieldValue) { //begin magic of dynamic posts / gets   //allows us to call a function after the entire page has loaded - and NOW the html elements exist.  the on page load fires before the html elements exist.
   if (document.getElementById) {
     var input = document.createElement('INPUT');
@@ -330,7 +330,12 @@ function saveform(){
 	
 	document.forms['f2'].target='iframe2';
 	document.forms['f2'].method='POST';
-	document.forms['f2'].action='https://docs.google.com/spreadsheet/formResponse?formkey=dGpLM1VZRmhnaWVkNE1HWVF0eERPWVE6MQ'; 
+
+
+
+// new https://docs.google.com/forms/d/e/1FAIpQLSdlaaOqiV1hh3rR3mQzqeWn0j8SxSHAbowI45_issGbJBTYhw/formResponse
+//old  https://docs.google.com/spreadsheet/formResponse?formkey=dGpLM1VZRmhnaWVkNE1HWVF0eERPWVE6MQ 
+	document.forms['f2'].action='https://docs.google.com/forms/d/e/1FAIpQLSdlaaOqiV1hh3rR3mQzqeWn0j8SxSHAbowI45_issGbJBTYhw/formResponse'; 
 	
 	//for test server
 	//if(String(document.location.href).substring(0,9)==='http://10'){ document.forms['f2'].action='http://10.1.10.148/process';}
