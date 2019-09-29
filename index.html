@@ -223,7 +223,7 @@
         for (var y = 1, len = 4; y <= len; y++) {
           do { r = Math.floor(Math.random() * max1); } while (rlist.indexOf("=" + r + '&') > -1); //only get new numbers
           rlist += "=" + r + '&';
-          document.getElementById('r' + y).src = "_img/robots/" + robots[r][0];
+          document.getElementById('r' + y).src = "/_img/robots/" + robots[r][0];
           document.getElementById('r' + y + 'n').innerHTML = robots[r][1];
           document.getElementById('r' + y + 's').innerHTML = robots[r][2];
         }//each robot
