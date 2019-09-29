@@ -206,13 +206,14 @@
     <script type="text/javascript">
 
       var robots = [
-        ['/_img/robots/0.png', 'Morgan', "I was told 97% of bots are very satisfied with MailBait. Only 3% Burst into flames. What was the question?"]
-        , ['/_img/robots/1.png', 'Patrick', "I sure am glad I have 18 years of rust so I'm allowed to use MailBait according to the terms of use."]
-        , ['/_img/robots/2.png', 'Frances', "MailBait was the solution to my empty inbox. Used it for 5 hours 2 years ago, and I still get 100 email a day past my spam filter daily."]
-        , ['/_img/robots/3.png', 'Archibald', "Good thing I created an email address just for MailBait.  It sure did fill up quick!  Get off my lawn."]
-        , ['/_img/robots/4.png', 'Blanchard', "Those Terms of Use are pretty rough.  I don't advise using this site."]
-        , ['/_img/robots/5.png', 'Winston', "MailBait pro has much better forms indexed. well worth the key from the newsletter."]
-        , ['/_img/robots/6.png', 'Mandy', "MailBait Pro+ categories are just crazy.  What on earth!"]
+        ['0.png', 'Morgan', "I was told 97% of bots are very satisfied with MailBait. Only 3% Burst into flames. What was the question?"]
+        , ['1.png', 'Patrick', "I sure am glad I have 18 years of rust so I'm allowed to use MailBait according to the terms of use."]
+        , ['2.png', 'Frances', "MailBait was the solution to my empty inbox. Used it for 5 hours 2 years ago, and I still get 100 email a day past my spam filter daily."]
+        , ['3.png', 'Archibald', "Good thing I created an email address just for MailBait.  It sure did fill up quick!  Get off my lawn."]
+        , ['4.png', 'Blanchard', "Those Terms of Use are pretty rough.  I don't advise using this site."]
+        , ['5.png', 'Winston', "MailBait pro has much better forms indexed. well worth the key from the newsletter."]
+        , ['6.png', 'Mandy', "MailBait Pro+ categories are just crazy.  What on earth!"]
+        , ['7.png', 'pCreapE0', "This FAQ is a joke. That was an obtuse excuse to write run on sentances and mispellings and poor formatting."]
       ];
 
       function drawbots() {
@@ -222,7 +223,7 @@
         for (var y = 1, len = 4; y <= len; y++) {
           do { r = Math.floor(Math.random() * max1); } while (rlist.indexOf("=" + r + '&') > -1); //only get new numbers
           rlist += "=" + r + '&';
-          document.getElementById('r' + y).src = "img/cats/" + robots[r][0];
+          document.getElementById('r' + y).src = "/_img/robots/" + robots[r][0];
           document.getElementById('r' + y + 'n').innerHTML = robots[r][1];
           document.getElementById('r' + y + 's').innerHTML = robots[r][2];
         }//each robot
