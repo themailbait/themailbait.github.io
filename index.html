@@ -69,7 +69,9 @@
       }
     }
   </style>
-  </style>
+
+
+
 </head>
 
 <body id="home">
@@ -212,7 +214,7 @@
       }
 
       var robots = [
-        ['0.png', 'Morgan', "I was told 97% of bots are very satisfied with MailBait. Only 4% Burst into flames. What was the question?"]
+        ['0.png', 'Morgan', "I was told <span id='count1'>97</span>% of bots are very satisfied with MailBait. Only 4% Burst into flames. What was the question?"]
         , ['1.png', 'Patrick', "I'm sure glad I have 18 years of rust so I'm allowed to use MailBait according to the terms of use."]
         , ['2.png', 'Desmond', "MailBait was the solution to my empty inbox. Used it for 5 hours 2 years ago, and still get 100 email a day past my spam filter."]
         , ['6.png', 'Archibald', "Good thing I created an email address just for MailBait.  It sure did fill up quick!  Get off my lawn."]
@@ -225,7 +227,7 @@
         , ['10.png', 'Vlad', "I wish the FAQ had more details on the nuts and bolts of how this works. Otherwise, 2.5 thumbs up."]
         , ['11.png', 'Copper', "Using a proxy is like wearing a ski mask. Own your can's actions regardless of your ugly mug."]
         , ['12.png', 'Old Sal', "In 2017, 4% of the forms on MailBait worked! I can only imaging what happens when that gets better."]
-        , ['13.png', 'HP48g', "Daily stats: " + formatNumber(2250 + Math.floor(Math.random() * 100) ) +" forum users. " + formatNumber(52324 + Math.floor(Math.random() * 100) ) +" forms. " + formatNumber(6250 + Math.floor(Math.random() * 100) ) +" forms confirmed. " + formatNumber(9013 + Math.floor(Math.random() * 100) ) +" daily users."]
+        , ['13.png', 'HP48g', "Daily stats: " + formatNumber(2250 + Math.floor(Math.random() * 100)) + " forum users. " + formatNumber(52324 + Math.floor(Math.random() * 100)) + " forms. " + formatNumber(6250 + Math.floor(Math.random() * 100)) + " forms confirmed. " + formatNumber(9013 + Math.floor(Math.random() * 100)) + " daily users."]
         , ['14.png', 'Canner', '"Dumpster Fire" is an insensative MailBait mail category. It\'s not Vlad\'s  fault his LIoN Cell caught fire.']
       ];
 
@@ -375,3 +377,8 @@
 </body>
 
 </html>
+
+<script src="./js/countUp.min.js" type="module"></script>
+<script>
+  let demo = new CountUp('count1', 97);
+</script>
