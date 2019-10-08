@@ -377,7 +377,14 @@
 
 <script src="./js/countUp.min.js" type="module"></script>
 <script>
-  let demo = new CountUp('count1', 2, 97);
+
+window.onload = function() {
+  var countUp = new CountUp('target', 2000);
+  countUp.start();
+  
+  let demo = new CountUp('count1',  97);
+}
+
 </script>
 
 </body>
