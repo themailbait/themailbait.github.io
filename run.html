@@ -40,69 +40,50 @@
 <![endif]-->
   <style>
     .category label {
-
       --color: blue;
-
-
       font-size: 95% !important;
       margin-bottom: -6px;
-
       padding-left: 2em;
       text-indent: -2em;
-
       line-height: 80%;
       vertical-align: text-top !important;
       vertical-align: top !important;
       padding-top: 5px;
-
     }
-
     .category label::first-line {
       -- color: red;
     }
-
-
     .category label:hover {
       background-color: GhostWhite;
       text-decoration: underline;
-
     }
-
     .mbstandard label:hover {
       text-decoration-color: lightslategray;
     }
-
     .mbpro label:hover {
       text-decoration-color: mediumblue;
     }
-
     .mbproplus label:hover {
       text-decoration-color: LightSalmon;
     }
-
     .category {
       background-color: FloralWhite;
-
     }
-
     .containerkey {
       /* --pro pro+ key blocks */
       display: none;
       background-color: darkred;
       color: white;
     }
-
     .iframewrap {
       width: 100% !important;
       overflow: hidden !important;
     }
-
     .wrap {
       width: 200%;
       height: 200px;
       overflow: hidden;
     }
-
     .iframe1 {
       width: 100% !important;
       height: 75% !important;
@@ -112,8 +93,6 @@
       transform-origin: 0 0;
       overflow: hidden;
     }
-
-
     #SlappyAdsDetected {
       display: none;
       margin-bottom: 30px;
@@ -123,9 +102,7 @@
       font-weight: bold;
       color: #fff;
       border-radius: 5px;
-
     }
-
     .glow {
       font-size: ;
       color: #fff;
@@ -134,12 +111,10 @@
       -moz-animation: glow 1s ease-in-out infinite alternate;
       animation: glow 1s ease-in-out infinite alternate;
     }
-
     @-webkit-keyframes glow {
       from {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
       }
-
       to {
         text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
       }
@@ -147,8 +122,6 @@
   </style>
 
   <script type="text/javascript">
-
-
     //global vars so we can handle non-blocking IO
     totalpacks = 747; //CHANGE THIS when add more formpack, how many packs of jsonp files we have.
     packcount = 0; // global count of how many packs processed
@@ -162,7 +135,6 @@
     //var prevent_bust = 0;  //frame busting variable  
     //win2 = window.open("", "Window2", "width=200,height=200,scrollbars=yes");
     //jsCount = 1;  //count down
-
     var n1 = "Michael Christopher Matthew Joshua Andrew Brandon Daniel Tyler James David Joseph Nicholas Ryan John Jacob Zachary Robert Justin Anthony William Jonathan Kyle Alexander Cody Kevin Ashley Jessica Amanda Brittany Sarah Samantha Emily Stephanie Elizabeth Megan Jennifer Lauren Kayla Nicole Chelsea Rachel Taylor Danielle Amber Rebecca Courtney Victoria Kelsey Melissa Michelle Charles Steven Gary Joseph Donald Ronald Kenneth Paul Larry Daniel Stephen Dennis Timothy Edward Jeffrey George Gregory Kevin Douglas Terry Anthony Jerry Bruce Randy Brian Frank Scott Roger Raymond Peter Patrick Keith Lawrence Wayne Danny Alan Gerald Ricky Carl Christopher Dale Walter Craig Willie Johnny Arthur Steve Joe Randall Jack Russell Henry Harold Mary Linda Patricia Susan Deborah Barbara Debra Karen Nancy Donna Cynthia Sandra Pamela Sharon Kathleen Carol Diane Brenda Cheryl Janet Elizabeth Kathy Margaret Janice Carolyn Denise Judy Rebecca Joyce Teresa Christine Catherine Shirley Judith Betty Beverly Lisa Laura Theresa Connie Ann Julie Gloria Gail Joan Paula Peggy Cindy Martha Bonnie Jane Cathy Robin Debbie Diana Marilyn Kathryn Dorothy Wanda Jean Vicki Sheila";
     var n2 = "Smith Johnson Williams Jones Brown Davis Miller Wilson Moore Taylor Anderson Thomas Jackson White Harris Martin Thompson Garcia Martinez Robinson Clark Rodriguez Lewis Lee Walker Hall Allen Young Hernandez King Wright Lopez Hill Scott Green Adams Baker Gonzalez Nelson Carter Mitchell Perez Roberts Turner Phillips Campbell Parker Evans Edwards Collins Stewart Sanchez Morris Rogers Reed Cook Morgan Bell Murphy Bailey Rivera Cooper Richardson Cox Howard Ward Torres Peterson Gray Ramirez James Watson Brooks Kelly Sanders Price Bennett Wood Barnes Ross Henderson Coleman Jenkins Perry Powell Long Patterson Hughes Flores Washington Butler Simmons Foster Gonzales Bryant Alexander Russell Griffin Diaz Hayes";
     var n3 = "! ? # $ ! . - +"
@@ -175,8 +147,6 @@
     pword = nn3[Math.round((Math.random() * (nn3.length - 1)))] + nn1[Math.round((Math.random() * (nn1.length - 1)))] + Math.round((Math.random() * 9));
     console.log(name);
     console.log(pword);
-
-
     function getQuerystring(key, default_) {
       if (default_ == null) default_ = "";
       key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
@@ -187,9 +157,6 @@
       else
         return qs[1];
     }
-
-
-
     function callTheJsonp()  //start the next pack, and reset to the beginning of that pack.
     {
       pack = pack + 1; //always increment which jsonp pack we're loading
@@ -197,13 +164,9 @@
       i = 0 //reset to the first form in the pack.
       if (pack > totalpacks) { pack = 0; }
       if (pack < 0) { pack = 0; }
-
-
       document.getElementById('pack').innerHTML = '<br/>Bookmark <a href="run.html?pack=' + pack + '">run.html?pack=' + pack + '</a> to resume later.';
-
       //for test server
       //if(String(document.location.href).substring(0,9)==='http://10'){ preurl='http://10.1.10.148/';}
-
       // the url of the script where we send the asynchronous call
       //if (1==jsonp_script)
       //{
@@ -217,22 +180,17 @@
       //var url = "jsonp.js?callback=parseRequest";
       //var url = "http://www.mailbait.info.nyud.net/jsonp/jsonp"+pack+".js?callback=parseRequest";
       var url = "https://themailbait.bitbucket.io/jsonp/jsonp" + pack + ".js?callback=parseRequest";
-
-
       var script = document.createElement('script');
       // set the src attribute to that url
       script.setAttribute('src', url);
       // insert the script in out page
       document.getElementsByTagName('head')[0].appendChild(script);
-
     }
-
     // this function should parse responses.. you can do anything you need.. 
     // you can make it general so it would parse all the responses the page receives based on a response field
     function parseRequest(response) {
       try // try to output this to the javascript console
       {
-
         JSON = response;
         pCount = response.items.length;
         //alert(pCount);
@@ -242,12 +200,10 @@
         //for (x in response.items)
         //{
         //console.log(response.items[x]);
-
         //need .mbAction
         //need .mbMethod
         //rest goes to payload.
         speed
-
         //if (x ==1 )
         // {
         //console.log(response.items[x]);
@@ -257,52 +213,34 @@
         //response.items[x]['.mbm'] = '';
         //for (y in response.items[x])
         //{
-
         //  if ( response.items[x][y] != '')
         //  {
         //   console.log(y + ' : ' + response.items[x][y]);
-
         //setTimeout(function() { console.log(y + ' : ' + response.items[x][y]); }, 1000);
-
         //  }
-
         //}
-
-
         //}
         //pause(2000); //pause for 2 seconds
-
         //setTimeout("a=2",1500);
-
         //delay(1000);
-
         //}
-
       }
       catch (an_exception) // alert for the users that don't have a javascript console
       {
         //alert(response.script);
       }
     }
-
-
-
-
     function pause(millisconds) {  //pause  - blocking.   do not use.
       millisconds += new Date().getTime();
       while (new Date() < millisconds) { /* Do nothing */ }
     }
-
-
     function removeChildrenRecursively(node) {
-
       if (!node) return;
       while (node.hasChildNodes()) {
         removeChildrenRecursively(node.firstChild);
         node.removeChild(node.firstChild);
       }
     }//end magic of dynamic posts / gets
-
     function addField(form, fieldType, fieldName, fieldValue) { //begin magic of dynamic posts / gets   //allows us to call a function after the entire page has loaded - and NOW the html elements exist.  the on page load fires before the html elements exist.
       if (document.getElementById) {
         var input = document.createElement('INPUT');
@@ -321,25 +259,18 @@
         form.appendChild(input);
       }
     }
-
     function reverse(s) {
       return s.split("").reverse().join("");
     }
-
-
     var active = "categories are skipped";
-
     function testform() {
-
       if (document.getElementById('pause').checked == false) {
         sends = sends + 1; //increment counter of how many we've sent
         //document.getElementById('iframe1').src='';
         removeChildrenRecursively(document.forms['f0']);  //clear the previous form[0]
-
         // document.forms['f0'].target='iframe1';
         if (JSON.items[i]['.mbm'] == 'P') { document.forms['f0'].method = 'POST'; }
         if (JSON.items[i]['.mbm'] == 'G') { document.forms['f0'].method = 'GET'; }
-
         action = JSON.items[i]['.mba'];
         switch (action.charAt(0)) {
           case 'H': action = 'http://www.' + action.slice(1); break;
@@ -347,13 +278,9 @@
           case 'h': action = 'http://' + action.slice(1); break;
           case 's': action = 'https://' + action.slice(1); break;
         }
-
-
         document.forms['f0'].action = action;
         //JSON.items[i]['.mbm'] = '';
         //JSON.items[i]['.mba'] = '';
-
-
         for (y in JSON.items[i]) {
           n1 = y;
           //alert(n1);
@@ -365,17 +292,11 @@
             if (value1 != '') { addField(document.forms['f0'], 'text', n1, value1); }
           }
         }  //for
-
         addField(document.forms['f0'], 'submit', 'mbbsubmit', '')
-
         //var newwin = window.open('','Windows2');
-
         //document.forms['f0'].target='Window2'; //post to popup -- comment out to not post to popup
         document.forms['f0'].target = 'my_iframe';
-
         //alert(document.getElementById('skiphttps').checked)
-
-
         if (document.getElementById('pause').checked == false) {
           //var newwin = window.open('','Window2');
           document.forms['f0'].mbbsubmit.click(); //this DOES work if we have element named 'submit'
@@ -383,39 +304,25 @@
           //  newwin.close();
           //}
         };
-
         //setTimeout("win2.close()",1000); //post to popup --comment out to not pop to popup
-
         //setTimeout("document.getElementById('iframe1').src='';",1000); 
-
         //document.getElementById('iframe1').onbeforeunload = function() { prevent_bust++ }  
         //setInterval(function() {  if (prevent_bust > 0) {prevent_bust -= 2; document.getElementById('iframe1').top.location = ''; alert('frame'); } }, 1); //antiframebust
-
         per = (packcount / totalpacks) * 100;  // draw progress of how far through all packs
         per = per + ".00001";
         per = per.substring(0, 4);
-
         if (per > 100) per = 100;
         totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms processed. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
-
-
         per = (i / pCount) * 100;  // draw progress of how far through this pack
         per = per + ".00001";
         per = per.substring(0, 4);
         if (per > 100) per = 100;
         document.getElementById('graph').innerHTML = totalsgraph + "<h3>Procssing Pack " + (packcount) + ". Progress: " + (i + 1) + " of " + pCount + "</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
-
-
-
-
-
         i++;
       } //if not paused
-
       //setTimeout("document.getElementById('iframe1').src='';", 50); 
       if (i < pCount) { //go onto next form in pack
         var windowclose = ""; //'by default, don't close the form
-
         if (document.getElementById('pause').checked == false) {
           //usually yields MUCH better results, by working through broken https certificates
           //windowclose = "var newwin = window.open('','Window2');newwin.close();";
@@ -425,11 +332,7 @@
       else { //end of pack, start a new pack
         callTheJsonp();
       }
-
     } //function testform()
-
-
-
   </script>
 
 </head>
@@ -748,7 +651,7 @@
           <div class="wrap">
             <iframe name="my_iframe" class="iframe1" sandbox="" referrerpolicy="no-referrer" src=""></iframe>
           </div>
-	</div>
+        </div>
       </div>
     </section>
 
@@ -791,14 +694,12 @@
     var d = new Date();
     var n = d.getFullYear();
     document.getElementById('footer-copyright').innerHTML = '&copy; MailBait ' + n;
-
   </script>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-23915961-2']);
     _gaq.push(['_trackPageview']);
-
     (function () {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -809,7 +710,6 @@
 
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', init, false);
-
     function init() {
       adsBlocked(function (blocked) {
         if (blocked) {
@@ -829,7 +729,6 @@
           var option2 = document.createElement("option");
           var option3 = document.createElement("option");
           var option4 = document.createElement("option");
-
           option1.text = "20 per minute";
           option1.value = "3000";
           x.add(option1);
@@ -842,26 +741,20 @@
           option4.text = "60 per minute";
           option4.value = "1000";
           x.add(option4);
-
           //<option value="3000">20 per minute</option>
           //<option value="2000">30 per minute</option>
           //<option value="1500">45 per minute</option>
           //<option value="1000">60 per minute</option>
-
         }
       })
     }
-
     function adsBlocked(callback) {
       var testURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-
       var myInit = {
         method: 'HEAD',
         mode: 'no-cors'
       };
-
       var myRequest = new Request(testURL, myInit);
-
       fetch(myRequest).then(function (response) {
         return response;
       }).then(function (response) {
@@ -883,7 +776,6 @@
       var expires = "expires=" + d.toUTCString();
       document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     } //setcookie
-
     function getCookie(cname) {
       var name = cname + "=";
       var ca = document.cookie.split(';');
@@ -898,15 +790,12 @@
       }
       return "";
     } //getcookie
-
     function setKey(key) {
       if (key != "" && key != null) {
         setCookie("key", key, 365);
       }
     } //setKey
-
     checkKey();
-
     function checkKey() {
       var key = getCookie("key");
       if (MakeAppleSauce(key) == true) {
@@ -921,7 +810,6 @@
         //setKey(key);
       }
     } //checkKey
-
     //setup adsense2
     function divedeep(src, srctable, desttable) {
       var srclen = srctable.length; var destlen = desttable.length; var val = 0; var numlen = src.length; for (var i = 0; i < numlen; i++) { val = val * srclen + srctable.indexOf(src.charAt(i)); }
@@ -929,7 +817,6 @@
       var r = val % destlen; var res = desttable.charAt(r); var q = Math.floor(val / destlen); while (q) { r = q % destlen; q = Math.floor(q / destlen); res = desttable.charAt(r) + res; }
       return res;
     } //adsense2
-
     function MakeAppleSauce(seed) {
       try {
         var B10 = "0123456789";
