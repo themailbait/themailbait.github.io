@@ -417,6 +417,10 @@
             Show Mail Categories
           </div>
 
+          <div id="https" style="display:none;">
+            <a href="/run.html">Click here</a> to access MailBait without HTTPS.  This reduces warning alerts.
+          </div>
+
         </div>
       </div>
 
@@ -709,6 +713,13 @@
 
 
   <script type="text/javascript">
+
+   //on https, show alert it may not work well
+
+   if (location.protocol == 'https:'){
+     document.getElementById('https').style.display='block';
+   }
+
     document.addEventListener('DOMContentLoaded', init, false);
     function init() {
       adsBlocked(function (blocked) {
