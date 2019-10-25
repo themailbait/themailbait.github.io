@@ -312,12 +312,12 @@
         per = per + ".00001";
         per = per.substring(0, 4);
         if (per > 100) per = 100;
-        totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms processed. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
+        totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " total forms processed. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
         per = (i / pCount) * 100;  // draw progress of how far through this pack
         per = per + ".00001";
         per = per.substring(0, 4);
         if (per > 100) per = 100;
-        document.getElementById('graph').innerHTML = totalsgraph + "<h3>Procssing Pack " + (packcount) + ". Progress: " + (i + 1) + " of " + pCount + "</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
+        document.getElementById('graph').innerHTML = totalsgraph + "<h3>Procssing Pack " + (packcount) + ". " + (i + 1) + " of " + pCount + " forms submitted.</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
         i++;
       } //if not paused
       //setTimeout("document.getElementById('iframe1').src='';", 50); 
@@ -497,6 +497,7 @@
         <label><input autocomplete="off" type="checkbox"> Dumpster fire interpretive art and dance</label>
         <label><input autocomplete="off" type="checkbox"> AI and Neural-Net generated portraits</label>
         <label><input autocomplete="off" type="checkbox"> Travel Agent Fare and Flight Tracking</label>
+        <label><input autocomplete="off" type="checkbox"> Cheap Flight Fair Discounts</label>
         <label><input autocomplete="off" type="checkbox"> Involuntary Drug Testing, Trials, and Screening</label>
         <label><input autocomplete="off" type="checkbox"> Secret Shopper, Angies List, Yelp reviews</label>
         <label><input autocomplete="off" type="checkbox"> Job Search, Dice, Monster, Indeed, Linkedin</label>
@@ -566,6 +567,7 @@
         <label><input autocomplete="off" type="checkbox"> Internships, and Intern Interment</label>
         <label><input autocomplete="off" type="checkbox"> MS Scarlett Feaver</label>
         <label><input autocomplete="off" type="checkbox"> PS5 pre-release specs</label>
+        <label><input autocomplete="off" type="checkbox"> Cybersecurity EMI modules</label>
         <label><input autocomplete="off" type="checkbox"> Prenuptial Escape Clauses</label>
         <label><input autocomplete="off" type="checkbox"> Reward, Gas, and Cash Back Cards </label>
         <label><input autocomplete="off" type="checkbox"> Medicare Advantage Plans</label>
@@ -594,6 +596,7 @@
         <label><input autocomplete="off" type="checkbox"> IRS/Tax auditing enrollment</label>
         <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
         <label><input autocomplete="off" type="checkbox"> just-the-tip of the day</label>
+        <label><input autocomplete="off" type="checkbox"> Nude Beach Satalite Imaginary</label>
         <label><input autocomplete="off" type="checkbox"> Asset forfeiture and seizure enrollment</label>
         <label><input autocomplete="off" type="checkbox"> Gun ownership state audits and registration</label>
         <label><input autocomplete="off" type="checkbox"> Unstable love poems for stalkers</label>
