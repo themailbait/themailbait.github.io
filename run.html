@@ -312,12 +312,12 @@
         per = per + ".00001";
         per = per.substring(0, 4);
         if (per > 100) per = 100;
-        totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms processed total. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
+        totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms sent total. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
         per = (i / pCount) * 100;  // draw progress of how far through this pack
         per = per + ".00001";
         per = per.substring(0, 4);
         if (per > 100) per = 100;
-        document.getElementById('graph').innerHTML = totalsgraph + "<h3>Procssing Pack " + (packcount) + ". " + (i + 1) + " of " + pCount + " forms. </h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
+        document.getElementById('graph').innerHTML = totalsgraph + "<h3>Working in Pack " + (packcount) + ": " + (i + 1) + " of " + pCount + " forms. </h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
         i++;
       } //if not paused
       //setTimeout("document.getElementById('iframe1').src='';", 50); 
