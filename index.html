@@ -217,22 +217,34 @@
       }
 
       var robots = [
-        ['0.png', 'Morgan', "I was told <span id='count1'>97</span>% of bots are very satisfied with MailBait. Only 4% Burst into flames. What was the question?"]
-        , ['1.png', 'Patrick', "I'm sure glad I have 18 years of rust so I'm allowed to use MailBait according to the terms of use."]
-        , ['2.png', 'Desmond', "MailBait was the solution to my empty inbox. Used it for 5 hours 2 years ago, and still get 100 email a day past my spam filter."]
-        , ['6.png', 'Archibald', "Good thing I created an email address just for MailBait.  It sure did fill up quick!  Get off my lawn."]
-        , ['4.png', 'Neo', "Those Terms of Use are pretty rough.  I calculate against using this site."]
-        , ['5.png', 'Winston', "MailBait Pro has much better forms indexed. It was well worth the waith for the key from the newsletter."]
-        , ['3.png', 'Spike', "MailBait Pro+ categories are just crazy.  Did a 5 solar year old bot dictate that?  What on earth!"]
-        , ['7.png', 'pCreapE0', "That FAQ was a joke. It was an obtuse excuse to write run on sentances and mispellings and poor formatting with pour grammer."]
-        , ['8.png', 'Simon', "Well Crush my lil robotic HAND! This site really pushes my buttons.  I don't think I'm the target audience."]
-        , ['9.png', 'Bram', "Rust in Peace, inbox.  It's too bad I didn't have a better compactor after running MailBait for 10 hours."]
-        , ['10.png', 'Vlad', "I wish the FAQ had more details on the nuts and bolts of how this works. Otherwise, 2.5 thumbs up."]
-        , ['11.png', 'Copper', "Using a proxy is like wearing a ski mask. Own your can's actions regardless of your ugly mug."]
-        , ['12.png', 'Old Sal', "In 2017, 4% of the forms on MailBait worked! I can only imaging what happens when that gets better."]
-        , ['13.png', 'HP48g', "Daily stats: " + formatNumber(2250 + Math.floor(Math.random() * 100)) + " forum users. " + formatNumber(52324 + Math.floor(Math.random() * 100)) + " forms. " + formatNumber(6250 + Math.floor(Math.random() * 100)) + " forms confirmed. " + formatNumber(9013 + Math.floor(Math.random() * 100)) + " daily users."]
-        , ['14.png', 'Canner', '"Dumpster Fire" is an insensative MailBait mail category. It\'s not Vlad\'s  fault his LIoN Cell caught fire.']
+        ['https://i.imgur.com/9CgzInZ.png', 'Morgan', "I was told <span id='count1'>97</span>% of bots are very satisfied with MailBait. Only 4% Burst into flames. What was the question?"]
+        , ['https://i.imgur.com/VuN2QiH.png', 'Patrick', "I'm sure glad I have 18 years of rust so I'm allowed to use MailBait according to the terms of use."]
+        , ['https://i.imgur.com/3eSHYhI.png', 'Desmond', "MailBait was the solution to my empty inbox. Used it for 5 hours 2 years ago, and still get 100 email a day past my spam filter."]
+        , ['https://i.imgur.com/9ITSUEo.png', 'Archibald', "Good thing I created an email address just for MailBait.  It sure did fill up quick!  Get off my lawn."]
+        , ['https://i.imgur.com/0OvusST.png', 'Neo', "Those Terms of Use are pretty rough.  I calculate against using this site."]
+        , ['https://i.imgur.com/wYzaCEF.png', 'Winston', "MailBait Pro has much better forms indexed. It was well worth the waith for the key from the newsletter."]
+        , ['https://i.imgur.com/WKMMPrq.png', 'Spike', "MailBait Pro+ categories are just crazy.  Did a 5 solar year old bot dictate that?  What on earth!"]
+        , ['https://i.imgur.com/xjf3IEh.png', 'pCreapE0', "That FAQ was a joke. It was an obtuse excuse to write run on sentances and mispellings and poor formatting with pour grammer."]
+        , ['https://i.imgur.com/9u7KZXK.png', 'Simon', "Well Crush my lil robotic HAND! This site really pushes my buttons.  I don't think I'm the target audience."]
+        , ['https://i.imgur.com/USabobl.png', 'Bram', "Rust in Peace, inbox.  It's too bad I didn't have a better compactor after running MailBait for 10 hours."]
+        , ['https://i.imgur.com/c6ZFT50.png', 'Vlad', "I wish the FAQ had more details on the nuts and bolts of how this works. Otherwise, 2.5 thumbs up."]
+        , ['https://i.imgur.com/mJcLu7X.png', 'Copper', "Using a proxy is like wearing a ski mask. Own your can's actions regardless of your ugly mug."]
+        , ['https://i.imgur.com/YNTh4k7.png', 'Old Sal', "In 2017, 4% of the forms on MailBait worked! I can only imaging what happens when that gets better."]
+        , ['https://i.imgur.com/cHSCBV7.png', 'HP48g', "Daily stats: " + formatNumber(2250 + Math.floor(Math.random() * 100)) + " forum users. " + formatNumber(52324 + Math.floor(Math.random() * 100)) + " forms. " + formatNumber(6250 + Math.floor(Math.random() * 100)) + " forms confirmed. " + formatNumber(9013 + Math.floor(Math.random() * 100)) + " daily users."]
+        , ['https://i.imgur.com/RY39mmz.png', 'Canner', '"Dumpster Fire" is an insensative MailBait mail category. It\'s not Vlad\'s  fault his LIoN Cell caught fire.']
       ];
+//more bot images to use
+
+  //
+  //
+  //https://i.imgur.com/AaNYHg3.png
+  //https://i.imgur.com/3bw8kCP.png
+  //https://i.imgur.com/xVl41rl.png
+  //https://i.imgur.com/5YqJf6b.png
+  //https://i.imgur.com/hLql4Qs.png
+  //https://i.imgur.com/zvP1I7m.png
+  //https://i.imgur.com/UOL639x.png
+
 
       function drawbots() {
         max1 = robots.length;
@@ -241,7 +253,8 @@
         for (var y = 1, len = 4; y <= len; y++) {
           do { r = Math.floor(Math.random() * max1); } while (rlist.indexOf("=" + r + '&') > -1); //only get new numbers
           rlist += "=" + r + '&';
-          document.getElementById('r' + y).src = "robots/" + robots[r][0];
+          //document.getElementById('r' + y).src = "robots/" + robots[r][0];
+          document.getElementById('r' + y).src = "" + robots[r][0];
           document.getElementById('r' + y + 'n').innerHTML = robots[r][1];
           document.getElementById('r' + y + 's').innerHTML = robots[r][2];
         }//each robot
