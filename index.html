@@ -383,9 +383,10 @@
         //drawheadline robot
         max2 = newstitles.length;
         r = Math.floor(Math.random() * max2);
+        r2 = Math.floor(Math.random() * max2);
         document.getElementById('r' + y).src = "https://i.imgur.com/AaNYHg3.png";
         document.getElementById('r' + y + 'n').innerHTML = "Braking News pwned";
-          document.getElementById('r' + y + 's').innerHTML = newstitles[r][0];
+          document.getElementById('r' + y + 's').innerHTML = newstitles[r][0]+".<br><br/>"+newstitles[r2][0]+".";
       }//drawbots
 
       drawbots();
