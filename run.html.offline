@@ -407,6 +407,20 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
     <section class="row" id="features">
 
       <div class="col7">
+
+
+
+          <div style="background-color:ghostwhite;padding-top:20px;padding-bottom:20px;text-align:center;border-radius: 9px;">
+              Uh oh... you done broke it!  We're down for a bit while we upgrade the server.<Br/><Br/>
+              <a href="http://numchk.com" onclick="_gaq.push(['_trackEvent', 'outbound', 'linkout-numchk']);">
+              <video width="320" height="240" autoplay loop>
+                  <source src="https://i.imgur.com/Huo46PL.mp4" type="video/mp4" />
+                </video>
+
+              <img src="https://i.imgur.com/rrwhX8I.gif" /><br/><br/>
+              <span style="font-size:larger">Visit <span style="font-size:" class="glow">NUMCHK.com</span> and mine social security numbers</a><br/>while this is sorted.</style>
+            </div>
+
         <script type="text/javascript">
             google_ad_client = "ca-pub-7432498983055520";
           /* home.html */
@@ -427,12 +441,8 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       <div class="col9">
         <h2>Fill your inbox with email.</h2>
         <h3>Submit your address to thousands of online forms.</h3>
-        <label for=".mbe">Email Address to Fill</label>
-        <input type="email" name=".mbe" id=".mbe" value="" required="required" placeholder="YourEmail@address.com" />
-        <div style="display:block;" id="runt">
-          <input type="submit" value="Run MailBait"
-            onclick="document.getElementById('settings').style.display='block';document.getElementById('runt').style.display='none';document.getElementById('stats').style.display='block';callTheJsonp();" />
-          <br /> By clicking [Run MailBait] you agree to the <a href="terms.html">Terms of Use</a>.<br />
+        
+        
         </div>
 
 
@@ -480,7 +490,9 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       </div>
     </section>
 
-    <section class="row" >
+
+
+    <section class="row"  onClick="_gaq.push(['_trackEvent', 'outbound', 'linkout-numchk']);window.location='http://numchk.com';">
 
       <div class="col3 category mbstandard">
         <h3 style="border-bottom: 2px solid black;">Standard Categories</h3>
