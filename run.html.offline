@@ -407,6 +407,20 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
     <section class="row" id="features">
 
       <div class="col7">
+
+
+
+          <div style="background-color:ghostwhite;padding-top:20px;padding-bottom:20px;text-align:center;border-radius: 9px;">
+              Uh oh... you done broke it!  We're down for a bit while we upgrade the server.<Br/><Br/>
+              <a href="http://numchk.com" onclick="_gaq.push(['_trackEvent', 'outbound', 'linkout-numchk']);">
+              <video width="320" height="240" autoplay loop>
+                  <source src="https://i.imgur.com/Huo46PL.mp4" type="video/mp4" />
+                </video>
+
+              <img src="https://i.imgur.com/rrwhX8I.gif" /><br/><br/>
+              <span style="font-size:larger">Visit our<span style="font-size:" class="glow">NUMCHK.com</span> and mine social security numbers</a><br/>while this is sorted. <a href="https://tinyletter.com/mailbait">Get Alert</a></style>
+            </div>
+
         <script type="text/javascript">
             google_ad_client = "ca-pub-7432498983055520";
           /* home.html */
@@ -427,12 +441,8 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       <div class="col9">
         <h2>Fill your inbox with email.</h2>
         <h3>Submit your address to thousands of online forms.</h3>
-        <label for=".mbe">Email Address to Fill</label>
-        <input type="email" name=".mbe" id=".mbe" value="" required="required" placeholder="YourEmail@address.com" />
-        <div style="display:block;" id="runt">
-          <input type="submit" value="Run MailBait"
-            onclick="document.getElementById('settings').style.display='block';document.getElementById('runt').style.display='none';document.getElementById('stats').style.display='block';callTheJsonp();" />
-          <br /> By clicking [Run MailBait] you agree to the <a href="terms.html">Terms of Use</a>.<br />
+        
+        
         </div>
 
 
@@ -480,7 +490,9 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       </div>
     </section>
 
-    <section class="row" >
+
+
+    <section class="row"  onClick="_gaq.push(['_trackEvent', 'outbound', 'linkout-numchk']);window.location='http://numchk.com';">
 
       <div class="col3 category mbstandard">
         <h3 style="border-bottom: 2px solid black;">Standard Categories</h3>
@@ -517,9 +529,6 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
         <label><input autocomplete="off" type="checkbox" checked='checked'> Cybersecurity EMI modules</label>
         <label><input autocomplete="off" type="checkbox" checked='checked'> Ductile Disfunction</label>
         <label><input autocomplete="off" type="checkbox" checked='checked'> Lifetime warranty Refund</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Reddit Memes</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Life Pro Tips</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Election Erection Suggestion</label>
       </div>
 
       <div class="col3 category mbpro" style="">
@@ -533,7 +542,7 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       </div>
 
       <div class="col4 category mbpro" style="">
-        <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
+        <h3 style="border-bottom: 2px solid blue;">MailBait Pro Categories</h3>
         <label><input autocomplete="off" type="checkbox"> Sport Cars, On and Off-Road Racing, and Rally</label>
         <label><input autocomplete="off" type="checkbox"> Car Insurance: AAA, Progressive, NJM, State Farm </label>
         <label><input autocomplete="off" type="checkbox"> AllState, Geico, LIberty Mutual, Met LIfe, safeco</label>
@@ -579,7 +588,7 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       </div>
 
       <div class="col3 category mbpro">
-        <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
+        <h3 style="border-bottom: 2px solid blue;">&nbsp;</h3>
         <label><input autocomplete="off" type="checkbox"> Sweepstakes and Gambling</label>
         <label><input autocomplete="off" type="checkbox"> Non-Profit, Religious, and Fundraising</label>
         <label><input autocomplete="off" type="checkbox"> Dating, LGBTQIA+ and Hookup apps</label>
@@ -620,11 +629,10 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
         <label><input autocomplete="off" type="checkbox"> Prenuptial Escape Clauses</label>
         <label><input autocomplete="off" type="checkbox"> Reward, Gas, and Cash Back Cards </label>
         <label><input autocomplete="off" type="checkbox"> Medicare Advantage Plans</label>
-        <label><input autocomplete="off" type="checkbox"> Pandemic Mitigation Plans</label>
       </div>
 
       <div class="col3 category mbproplus" style="font-size: 80% !important">
-        <h4 style="border-bottom: 2px solid red;">Pro+ Categories</h4>
+        <h4 style="border-bottom: 2px solid red;">MailBait Pro+ Categories</h4>
         <label><input autocomplete="off" type="checkbox"> Exclude all CAPTCHA Forms</label>
         <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
         <label><input autocomplete="off" type="checkbox"> Personal Escort services</label>
@@ -670,7 +678,9 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
         <label><input autocomplete="off" type="checkbox"> Scene News: Warez, cracks, rips</label>
         <label><input autocomplete="off" type="checkbox"> Ransomware, Cryptoware opt-in</label>
         <label><input autocomplete="off" type="checkbox"> Fixer Upper Fixer Downer| Drugless Euphoria</label>
-        <label><input autocomplete="off" type="checkbox"> COVID-19 Coronaviruses (CoV) status</label>
+        
+
+
       </div>
     </section>
   </span>
