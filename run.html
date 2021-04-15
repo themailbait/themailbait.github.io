@@ -1,45 +1,46 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width">
-  <title>Run MailBait</title>
-  <link rel="shortcut icon" type="image/png" href="https://themailbait.bitbucket.io/favicon.ico" />
-  <link rel="icon" href="./icon.32.png" sizes="32x32" >
-  <link rel="icon" href="./icon.48.png" sizes="48x48" >
-  <link rel="icon" href="./icon.96.png" sizes="96x96" >
-  <link rel="icon" href="./icon.144.png" sizes="144x144" >
-  <meta name="referrer" content="no-referrer">
-  <meta name="static_url" content="http://www.mailbait.info/" />
-  <meta http-equiv="expires" content="0" />
-  <meta http-equiv="cache-control" content="public" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="imagetoolbar" content="false" />
-  <meta http-equiv="content-style-type" content="text/css" />
-  <meta name="author" lang="en-US" content="MailBait.info" xml:lang="en-US" />
-  <meta name="abstract" content="Use Mailbait.info to fill you inbox with email.">
-  <meta name="publisher" content="MailBait.info" />
-  <meta name="copyright" content="2010-2019 by mailbait.info MailBait" />
-  <meta name="keywords"
-    content="free email, email spam, spam, spam email, spam filter, unsolicited email, email filter, filter mail, filter email, email, mail, bait, mailbait, mail bait, spam inbox, fill inbox, full inbox, mailbomb, mailbate, mail bate"
-    xml:lang="en-US" />
-  <meta name="language" content="English">
-  <meta name="description" lang="en-US" content="Run MailBait.  Fill your INBOX." xml:lang="en-US" />
-  <meta name="page-topic" lang="en-US" content="Service" xml:lang="en-US" />
-  <meta name="Audience" lang="en-US" content="All" xml:lang="en-US" />
-  <meta name="revisit-after" content="1 day" />
-  <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/horus.css">
-  <link rel="stylesheet" href="/style.css">
-  <!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-<![endif]-->
-  <style>
-    .category label {
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width">
+    <title>Run MailBait</title>
+    <link rel="shortcut icon" type="image/png" href="https://themailbait.bitbucket.io/favicon.ico" />
+    <link rel="icon" href="./icon.32.png" sizes="32x32" >
+    <link rel="icon" href="./icon.48.png" sizes="48x48" >
+    <link rel="icon" href="./icon.96.png" sizes="96x96" >
+    <link rel="icon" href="./icon.144.png" sizes="144x144" >
+    <meta name="referrer" content="no-referrer">
+    <meta name="static_url" content="http://www.mailbait.info/" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta name="author" lang="en-US" content="MailBait.info" xml:lang="en-US" />
+    <meta name="abstract" content="Use Mailbait.info to fill you inbox with email.">
+    <meta name="publisher" content="MailBait.info" />
+    <meta name="copyright" content="2010-2019 by mailbait.info MailBait" />
+    <meta name="keywords"
+      content="free email, email spam, spam, spam email, spam filter, unsolicited email, email filter, filter mail, filter email, email, mail, bait, mailbait, mail bait, spam inbox, fill inbox, full inbox, mailbomb, mailbate, mail bate"
+      xml:lang="en-US" />
+    <meta name="language" content="English">
+    <meta name="description" lang="en-US" content="Run MailBait.  Fill your INBOX." xml:lang="en-US" />
+    <meta name="page-topic" lang="en-US" content="Service" xml:lang="en-US" />
+    <meta name="Audience" lang="en-US" content="All" xml:lang="en-US" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/horus.css">
+    <link rel="stylesheet" href="/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <style>
+      .category label {
       --color: blue;
       font-size: 95% !important;
       margin-bottom: -6px;
@@ -49,42 +50,42 @@
       vertical-align: text-top !important;
       vertical-align: top !important;
       padding-top: 5px;
-    }
-    .category label::first-line {
+      }
+      .category label::first-line {
       -- color: red;
-    }
-    .category label:hover {
+      }
+      .category label:hover {
       background-color: GhostWhite;
       text-decoration: underline;
-    }
-    .mbstandard label:hover {
+      }
+      .mbstandard label:hover {
       text-decoration-color: lightslategray;
-    }
-    .mbpro label:hover {
+      }
+      .mbpro label:hover {
       text-decoration-color: mediumblue;
-    }
-    .mbproplus label:hover {
+      }
+      .mbproplus label:hover {
       text-decoration-color: LightSalmon;
-    }
-    .category {
+      }
+      .category {
       background-color: FloralWhite;
-    }
-    .containerkey {
+      }
+      .containerkey {
       /* --pro pro+ key blocks */
       display: none;
       background-color: darkred;
       color: white;
-    }
-    .iframewrap {
+      }
+      .iframewrap {
       width: 100% !important;
       overflow: hidden !important;
-    }
-    .wrap {
+      }
+      .wrap {
       width: 200%;
       height: 200px;
       overflow: hidden;
-    }
-    .iframe1 {
+      }
+      .iframe1 {
       width: 100% !important;
       height: 75% !important;
       -webkit-transform: scale(.5);
@@ -92,8 +93,8 @@
       -webkit-transform-origin: 0 0;
       transform-origin: 0 0;
       overflow: hidden;
-    }
-    #SlappyAdsDetected {
+      }
+      #SlappyAdsDetected {
       display: none;
       margin-bottom: 30px;
       padding: 20px 10px;
@@ -102,822 +103,769 @@
       font-weight: bold;
       color: #fff;
       border-radius: 5px;
-    }
-
-    .glow {
-background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, rgb(0, 84, 253) 0%, rgb(255, 25, 247) 7.14%, rgb(255, 46, 93) 14.28%, rgb(255, 170, 7) 21.42%, rgb(255, 170, 7) 28.56%, rgb(255, 46, 93) 35.7%, rgb(255, 25, 247) 42.84%, rgb(0, 84, 253) 50%) repeat scroll 0% 0% / 600vw 600vw padding-box text;
-background-color:
-rgba(0, 0, 0, 0);
-background-position-x: 0%;
-background-position-y: 0%;
-background-repeat: repeat;
-background-attachment: scroll;
-background-image: repeating-linear-gradient(-45deg,
-rgb(0, 84, 253) 0%, rgb(255, 25, 247) 7.14%, rgb(255, 46, 93) 14.28%, rgb(255, 170, 7) 21.42%, rgb(255, 170, 7) 28.56%, rgb(255, 46, 93) 35.7%, rgb(255, 25, 247) 42.84%,
-rgb(0, 84, 253) 50%);
-background-size: 600vw 600vw;
-background-origin: padding-box;
-background-clip: text;
--webkit-background-clip: text;
--webkit-animation: 10s linear 0s infinite normal forwards running followThrough;
--moz-animation: 10s linear 0s infinite normal forwards running followThrough;
-animation: 10s linear 0s infinite normal forwards running followThrough;
-
--webkit-text-fill-color: transparent;
-
-}
-
-@keyframes followThrough {
-  0%{background-position:0% 0%}
-    50%{background-position:50% 50%}
-    100%{background-position:0% 0%}
-}
-
-@-webkit-keyframes followThrough {
-  0%{background-position:0% 0%}
-    50%{background-position:50% 50%}
-    100%{background-position:0% 0%}
-}
-
-@-moz-keyframes followThrough {
-  0%{background-position:0% 0%}
-    50%{background-position:50% 50%}
-    100%{background-position:0% 0%}
-}
-
-
-    .glowold {
+      }
+      .glow {
+      background: rgba(0, 0, 0, 0) repeating-linear-gradient(-45deg, rgb(0, 84, 253) 0%, rgb(255, 25, 247) 7.14%, rgb(255, 46, 93) 14.28%, rgb(255, 170, 7) 21.42%, rgb(255, 170, 7) 28.56%, rgb(255, 46, 93) 35.7%, rgb(255, 25, 247) 42.84%, rgb(0, 84, 253) 50%) repeat scroll 0% 0% / 600vw 600vw padding-box text;
+      background-color:
+      rgba(0, 0, 0, 0);
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-image: repeating-linear-gradient(-45deg,
+      rgb(0, 84, 253) 0%, rgb(255, 25, 247) 7.14%, rgb(255, 46, 93) 14.28%, rgb(255, 170, 7) 21.42%, rgb(255, 170, 7) 28.56%, rgb(255, 46, 93) 35.7%, rgb(255, 25, 247) 42.84%,
+      rgb(0, 84, 253) 50%);
+      background-size: 600vw 600vw;
+      background-origin: padding-box;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-animation: 10s linear 0s infinite normal forwards running followThrough;
+      -moz-animation: 10s linear 0s infinite normal forwards running followThrough;
+      animation: 10s linear 0s infinite normal forwards running followThrough;
+      -webkit-text-fill-color: transparent;
+      }
+      @keyframes followThrough {
+      0%{background-position:0% 0%}
+      50%{background-position:50% 50%}
+      100%{background-position:0% 0%}
+      }
+      @-webkit-keyframes followThrough {
+      0%{background-position:0% 0%}
+      50%{background-position:50% 50%}
+      100%{background-position:0% 0%}
+      }
+      @-moz-keyframes followThrough {
+      0%{background-position:0% 0%}
+      50%{background-position:50% 50%}
+      100%{background-position:0% 0%}
+      }
+      .glowold {
       font-size: ;
       color: #fff;
       text-align: center;
       -webkit-animation: glow 1s ease-in-out infinite alternate;
       -moz-animation: glow 1s ease-in-out infinite alternate;
       animation: glow 1s ease-in-out infinite alternate;
-    }
-    @-webkit-keyframes glow {
+      }
+      @-webkit-keyframes glow {
       from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
       }
       to {
-        text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+      text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
       }
-    }
-  </style>
-
-  
-
-</head>
-
-<body id="run">
-  <div class="wrapper">
-    <section class="row">
-      <div class="col9" style="margin-bottom:-20px;">
-        <!-- http://i.imgur.com/U71ffzY.gif -->
-        <h1 class="logo"><a href="index.html" title="MailBait"><img src="https://i.imgur.com/qkUoiMB.png" alt="MailBait"
-              width="200" height="41" alt="MailBait" /></a></h1>
-      </div>
-      <div class="col7 margintop" style="margin-bottom:-20px;">
-        <nav>
-          <ul class="pagination ">
-            <li><a href="index.html" title="Home" class="home">&nbsp;Home&nbsp;</a></li>
-            <li><a href="run.html" title="Run MailBait" class="run">&nbsp;Run&nbsp;</a></li>
-            <li><a href="add.html" title="Add Mail Source" class="add1">Add&nbsp;</a></li>
-            <li><a href="block.html" title="Block email submission" class="add1">Block</a></li>
-            <li class="last"><a href="faq.html" title="Help and Frequently Asked Questions" class="faq">FAQ</a></li>
-            <li class="last containerkey" style="display:none"><a style='color:red !important;' href="run.html?mbp#pro"
+      }
+    </style>
+  </head>
+  <body id="run">
+    <div class="wrapper">
+      <section class="row">
+        <div class="col9" style="margin-bottom:-20px;">
+          <!-- http://i.imgur.com/U71ffzY.gif -->
+          <h1 class="logo"><a href="index.html" title="MailBait"><img src="https://i.imgur.com/qkUoiMB.png" alt="MailBait"
+            width="200" height="41" alt="MailBait" /></a></h1>
+        </div>
+        <div class="col7 margintop" style="margin-bottom:-20px;">
+          <nav>
+            <ul class="pagination ">
+              <li><a href="index.html" title="Home" class="home">&nbsp;Home&nbsp;</a></li>
+              <li><a href="run.html" title="Run MailBait" class="run">&nbsp;Run&nbsp;</a></li>
+              <li><a href="add.html" title="Add Mail Source" class="add1">Add&nbsp;</a></li>
+              <li><a href="block.html" title="Block email submission" class="add1">Block</a></li>
+              <li class="last"><a href="faq.html" title="Help and Frequently Asked Questions" class="faq">FAQ</a></li>
+              <li class="last containerkey" style="display:none"><a style='color:red !important;' href="run.html?mbp#pro"
                 title="Pro " class="faq">PRO</a></li>
-          </ul>
-        </nav>
-      </div>
-      <hr>
-    </section>
-
-    <section class="row" id="features">
-
-      <div class="col7">
-        <!-- show adds-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- responsive verticle -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7432498983055520"
-     data-ad-slot="7272511864"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-&nbsp;
-<br/>	      
-      </div>
-<code>
-
-      <div class="col9">
-        <h2>Fill your inbox with email.</h2>
-        <h3>Submit your address to thousands of online forms.</h3>
-        <label for=".mbe">Email Address to Fill</label>
-        <input type="email" name=".mbe" id=".mbe" value="" required="required" placeholder="YourEmail@address.com" />
-        <div style="display:block;" id="runt">
-          <input type="submit" value="Run MailBait"
-            onclick="document.getElementById('settings').style.display='block';document.getElementById('runt').style.display='none';document.getElementById('stats').style.display='block';callTheJsonp();" />
-          <br /> By clicking [Run MailBait] you agree to the <a href="terms.html">Terms of Use</a>.<br />
+            </ul>
+          </nav>
         </div>
-
-
-        <div style="display:none;" id="settings">
-          <!-- <em>Allow popups on mailbait.info to run this service.</em> -->
-          <label for="selector" id="speedlabel">Speed <a href="faq.html#speed" title="speed explained">[ ? ]</a></label>
-          <select name="speed" id="speed">
-            <option selected="selected" value="5000">12 per minute</option>
-          </select>
-
-
-          <!--
-<label for="windowclose">Popups</label>
-<input type="checkbox" id="windowclose" checked="checked" value="YES" /> post forms in background<br/>
--->
-
-          <label for="pause" id="pauselbl">Active (MailBait is currrently <a href="#running1"
-              style="color:green;">running below</a>. This tab must remain open.)</label>
-          <div style="display:none;"> <input type="checkbox" name="pause" id="pause" /> Pause progress <br /> </div>
-          <input id="pausebtn" type="submit" value="Pause MailBait"
-            onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently <span style=color:darkorange>PAUSED</span>)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Active (MailBait is currently <a href=#running1 style=color:green;>running below</a>. This tab must remain open.)';};">
-
-          <div><input autocomplete="off" id="categories1" name="categories1" type="checkbox" checked="checked"
-              onClick="document.getElementById('features1').style.display='block';if(document.getElementById('categories1').checked==false){document.getElementById('features1').style.display='none'}">
-            Show Mail Categories
-          </div>
-
-          <div id="https" style="display:none;">
-            <a href="http://MailBait.info/run.html">Click here</a> to access MailBait without HTTPS.  This reduces warning alerts.
-          </div>
-
-        </div>
-      </div>
-
-      <a href="pro" id="pro"></a>
-      <div class="containerkey" style="width:100%"><br />Pro tools current. Extended Categories activated until key
-        expires at <span id='active' name='active'></span></div>
-    </section>
-
-
-    <span id="features1" name="features1" style="font-size: 75% !important;display:;">
-    <section class="row">
-      <div class="col16" style="margin-bottom:-20px;text-align: left;">
-        <h2>Select categories of interest:</h2>
-      </div>
-    </section>
-
-    <section class="row" >
-
-      <div class="col3 category mbstandard">
-        <h3 style="border-bottom: 2px solid black;">Standard Categories</h3>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> College and University Classes</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Open Source Software / Coding</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Uber, Lyft, Meal and Grocery Delivery</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Vet, Pet, and lawn care</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Late-night radio, UFO, and Conspiracy</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Word of the Day, Daily Verse</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Funny Cat and Dog Videos</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Enterprise Server IT resources</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Fortune 500 infrastructure</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Politicals and Local Government</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Vitamin, Protein, Vegan, Beyond Meat</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Supplement and Beauty products</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Personalized and Custom Rings</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Quilting, Crafting, Minatures</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Tabletop Gaming News</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Car, Motercycle, Boat Insurance</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Variable annuity life Insurance</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Wine tasting and Van Life</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Levitating free energy</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Productivity Boosting strageies</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Ethically Sourced Elitism and Cults</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Communication, web-development, Search Engines</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> UAE, Dubai Vacations and Real Estate</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Drone Capturing and UAV LIoN Recovery</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Cord Blood and Stem Cell Research</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Fun, Liesure, Photos, Instagram</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Fraudential Package en route Redirection</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Essays in 2 words, Doctorals in 3</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Mugshot and Public Record Expungement</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Pet Medical Insurance Discounts</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Cybersecurity EMI modules</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Ductile Disfunction</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Lifetime warranty Refund</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Reddit Memes</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Life Pro Tips</label>
-        <label><input autocomplete="off" type="checkbox" checked='checked'> Election Erection Suggestion</label>
-      </div>
-
-      <div class="col3 category mbpro" style="">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- responsive verticle -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7432498983055520"
-          data-ad-slot="7272511864" data-ad-format="auto" data-full-width-responsive="true">
-        </ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        &nbsp;
-      </div>
-
-      <div class="col4 category mbpro" style="">
-        <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
-        <label><input autocomplete="off" type="checkbox"> Sport Cars, On and Off-Road Racing, and Rally</label>
-        <label><input autocomplete="off" type="checkbox"> Car Insurance: AAA, Progressive, NJM, State Farm </label>
-        <label><input autocomplete="off" type="checkbox"> AllState, Geico, LIberty Mutual, Met LIfe, safeco</label>
-        <label><input autocomplete="off" type="checkbox"> Sports: Horse racing, NFL, PGA Golf, MLB Baseball</label>
-        <label><input autocomplete="off" type="checkbox"> Mental and Physical Health, wellness</label>
-        <label><input autocomplete="off" type="checkbox"> Classifieds, craigslist, FB Marketplace</label>
-        <label><input autocomplete="off" type="checkbox"> Retirement and Benefit Calculator</label>
-        <label><input autocomplete="off" type="checkbox"> Collections and Medical invoice double-billing</label>
-        <label><input autocomplete="off" type="checkbox"> Transferable Life-insurance policies</label>
-        <label><input autocomplete="off" type="checkbox"> Cheap Flight and travel discounts</label>
-        <label><input autocomplete="off" type="checkbox"> Dumpster fire interpretive art and dance</label>
-        <label><input autocomplete="off" type="checkbox"> AI and Neural-Net generated portraits</label>
-        <label><input autocomplete="off" type="checkbox"> Travel Agent Fare and Flight Tracking</label>
-        <label><input autocomplete="off" type="checkbox"> Involuntary Drug Testing, Trials, and Screening</label>
-        <label><input autocomplete="off" type="checkbox"> Secret Shopper, Angies List, Yelp reviews</label>
-        <label><input autocomplete="off" type="checkbox"> Job Search, Dice, Monster, Indeed, Linkedin</label>
-        <label><input autocomplete="off" type="checkbox"> Recruiting, Placement, and Union Jobs</label>
-        <label><input autocomplete="off" type="checkbox"> Checking, Credit Restoration</label>
-        <label><input autocomplete="off" type="checkbox"> Sustainability, Offgrid, and Survival</label>
-        <label><input autocomplete="off" type="checkbox"> Elder-care, assisted living, and nursing homes</label>
-        <label><input autocomplete="off" type="checkbox"> Commercial and Residential Real Estate</label>
-        <label><input autocomplete="off" type="checkbox"> Adult MP3, 18+</label>
-        <label><input autocomplete="off" type="checkbox"> NSFW, *Hub, lingerie</label>
-        <label><input autocomplete="off" type="checkbox"> Surveys, questionaires, personality tests</label>
-        <label><input autocomplete="off" type="checkbox"> Purity Test results after middle-age</label>
-        <label><input autocomplete="off" type="checkbox"> Pay-Day and Same-Day Loans, Mortgage Refinancing</label>
-        <label><input autocomplete="off" type="checkbox"> Box Office Movies, Music, Entertainment</label>
-        <label><input autocomplete="off" type="checkbox"> BOA,Capital One,Chase,wells fargo,citigroup</label>
-        <label><input autocomplete="off" type="checkbox"> AARP, Carnival Cruise, Royal Caribbean</label>
-        <label><input autocomplete="off" type="checkbox"> Asteroid and Commet Speculative Mining</label>
-        <label><input autocomplete="off" type="checkbox"> Fishing, Hunting, Outdoors</label>
-        <label><input autocomplete="off" type="checkbox"> Video Games, XBOX, PS4, FPS, MMORG</label>
-        <label><input autocomplete="off" type="checkbox"> Emergency services and Urgent Care</label>
-        <label><input autocomplete="off" type="checkbox"> Facebook, Social Media Influencers, Twitter</label>
-        <label><input autocomplete="off" type="checkbox"> Criminal Attorney, BailBonds</label>
-        <label><input autocomplete="off" type="checkbox"> Last of Us 2 Griefers</label>
-        <label><input autocomplete="off" type="checkbox"> Hemorrhoid Permanent Makeup</label>
-        <label><input autocomplete="off" type="checkbox"> ID Enhancement and Age Selection</label>
-        <label><input autocomplete="off" type="checkbox"> Horoscope and Astrology Spirit Animals</label>
-        <label><input autocomplete="off" type="checkbox"> Vegan-based Diet bio performance</label>
-        <label><input autocomplete="off" type="checkbox"> Engrish as a second language ESL Resources</label>
-        
-      </div>
-
-      <div class="col3 category mbpro">
-        <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
-        <label><input autocomplete="off" type="checkbox"> Sweepstakes and Gambling</label>
-        <label><input autocomplete="off" type="checkbox"> Non-Profit, Religious, and Fundraising</label>
-        <label><input autocomplete="off" type="checkbox"> Dating, LGBTQIA+ and Hookup apps</label>
-        <label><input autocomplete="off" type="checkbox"> Work From Home, Home Business</label>
-        <label><input autocomplete="off" type="checkbox"> Piercings, Tattoos, Scarification</label>
-        <label><input autocomplete="off" type="checkbox"> UFC, MMA, BJJ, Karate, Fitness</label>
-        <label><input autocomplete="off" type="checkbox"> Phone and mobile hardware</label>
-        <label><input autocomplete="off" type="checkbox"> Laser, Plasma, and Heavy Machining</label>
-        <label><input autocomplete="off" type="checkbox"> FTL, LTL, and Long Haul Trucking</label>
-        <label><input autocomplete="off" type="checkbox"> Hitachi, Volvo, John Deere, JCB</label>
-        <label><input autocomplete="off" type="checkbox"> Investing, Stocks, Daytrading</label>
-        <label><input autocomplete="off" type="checkbox"> Luxury appearal and Zales Jewelry</label>
-        <label><input autocomplete="off" type="checkbox"> Anime, Cosplay, LARP</label>
-        <label><input autocomplete="off" type="checkbox"> Vacation, Holiday, and Travel</label>
-        <label><input autocomplete="off" type="checkbox"> A Dolt: Script Club</label>
-        <label><input autocomplete="off" type="checkbox"> Pole Prancing, Live Noobs</label>
-        <label><input autocomplete="off" type="checkbox"> OTC, Prescription, and Pharamacy</label>
-        <label><input autocomplete="off" type="checkbox"> Coupons, Daily Deals, SlickDeals</label>
-        <label><input autocomplete="off" type="checkbox"> Japenese vending machine hacks</label>
-        <label><input autocomplete="off" type="checkbox"> Laptop, Desktop, AMD vs Intel</label>
-        <label><input autocomplete="off" type="checkbox"> Turbo Tax, Tax Act, H&R Block</label>
-        <label><input autocomplete="off" type="checkbox"> Dark Crystal Therapy and healing</label>
-        <label><input autocomplete="off" type="checkbox"> Dollhouse estate planning</label>
-        <label><input autocomplete="off" type="checkbox"> mesothelioma machine learning</label>
-        <label><input autocomplete="off" type="checkbox"> Socks, Sandles and the northwest</label>
-        <label><input autocomplete="off" type="checkbox"> Rare-Earth Minerial Harvesting</label>
-        <label><input autocomplete="off" type="checkbox"> Mid-Fight Refueling</label>
-        <label><input autocomplete="off" type="checkbox"> IoT Mesh Yagi kBand Breach</label>
-        <label><input autocomplete="off" type="checkbox"> Contract Breach Audits</label>
-        <label><input autocomplete="off" type="checkbox"> HIPPA PCI Compliance Shortcuts</label>
-        <label><input autocomplete="off" type="checkbox"> Bleacher Graduate Rodeo Studies</label>
-        <label><input autocomplete="off" type="checkbox"> Yakuza Pedicure/Manicure</label>
-        <label><input autocomplete="off" type="checkbox"> DOT Prison Currency Transfers</label>
-        <label><input autocomplete="off" type="checkbox"> Student buy Essay Services</label>
-        <label><input autocomplete="off" type="checkbox"> Internships, and Intern Interment</label>
-        <label><input autocomplete="off" type="checkbox"> MS Scarlett Feaver</label>
-        <label><input autocomplete="off" type="checkbox"> PS5 pre-release specs</label>
-        <label><input autocomplete="off" type="checkbox"> Prenuptial Escape Clauses</label>
-        <label><input autocomplete="off" type="checkbox"> Reward, Gas, and Cash Back Cards </label>
-        <label><input autocomplete="off" type="checkbox"> Medicare Advantage Plans</label>
-        <label><input autocomplete="off" type="checkbox"> Pandemic Mitigation Plans</label>
-      </div>
-
-      <div class="col3 category mbproplus" style="font-size: 80% !important">
-        <h4 style="border-bottom: 2px solid red;">Pro+ Categories</h4>
-        <label><input autocomplete="off" type="checkbox"> Exclude all CAPTCHA Forms</label>
-        <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
-        <label><input autocomplete="off" type="checkbox"> Personal Escort services</label>
-        <label><input autocomplete="off" type="checkbox"> Mammalian genital enhancement</label>
-        <label><input autocomplete="off" type="checkbox"> DWI/ DUI loss of vehicle license therapy</label>
-        <label><input autocomplete="off" type="checkbox"> Bath salts and recreational creativity</label>
-        <label><input autocomplete="off" type="checkbox"> One way vacations</label>
-        <label><input autocomplete="off" type="checkbox"> Reptile husbandry</label>
-        <label><input autocomplete="off" type="checkbox"> Darkweb entrapment</label>
-        <label><input autocomplete="off" type="checkbox"> Trade-war shortcuts and FBA</label>
-        <label><input autocomplete="off" type="checkbox"> Wikileaks 0day</label>
-        <label><input autocomplete="off" type="checkbox"> Involuntary wealth redistribution and taxes</label>
-        <label><input autocomplete="off" type="checkbox"> unlawful termination, workman's comp, and the investigators
-          that find them</label>
-        <label><input autocomplete="off" type="checkbox"> Remote surveillance of the paranoid</label>
-        <label><input autocomplete="off" type="checkbox"> Vehicle repossession enrollment</label>
-        <label><input autocomplete="off" type="checkbox"> Phone tracking enrollment</label>
-        <label><input autocomplete="off" type="checkbox"> Jury duty auto enrollment</label>
-        <label><input autocomplete="off" type="checkbox"> IRS/Tax auditing enrollment</label>
-        <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
-        <label><input autocomplete="off" type="checkbox"> just-the-tip of the day</label>
-        <label><input autocomplete="off" type="checkbox"> Nude Beach Satellite Imaginary</label>
-        <label><input autocomplete="off" type="checkbox"> Asset forfeiture and seizure enrollment</label>
-        <label><input autocomplete="off" type="checkbox"> Gun ownership state audits and registration</label>
-        <label><input autocomplete="off" type="checkbox"> Unstable love poems for stalkers</label>
-        <label><input autocomplete="off" type="checkbox"> Butte, MT PlugShare</label>
-        <label><input autocomplete="off" type="checkbox"> Pet cloning</label>
-        <label><input autocomplete="off" type="checkbox"> Disney bedtime phone hotline</label>
-        <label><input autocomplete="off" type="checkbox"> Biblical Praportions and Principles</label>
-        <label><input autocomplete="off" type="checkbox"> End of life photography</label>
-        <label><input autocomplete="off" type="checkbox"> Chinesium Trade Secrets and Quality Assurance</label>
-        <label><input autocomplete="off" type="checkbox"> Hair implant thongs</label>
-        <label><input autocomplete="off" type="checkbox"> Penetration Testing, Lockpicks, Chasity Belts</label>
-        <label><input autocomplete="off" type="checkbox"> Vigilante Internships</label>
-        <label><input autocomplete="off" type="checkbox"> CV /Resume bulk submissions, recruiting, networking</label>
-        <label><input autocomplete="off" type="checkbox"> Rectal Rodeo clowns</label>
-        <label><input autocomplete="off" type="checkbox"> Lien enforcement</label>
-        <label><input autocomplete="off" type="checkbox"> Personal Fluid and Bacteria transplant</label>
-        <label><input autocomplete="off" type="checkbox"> Personal Injury Attorney and Law</label>
-        <label><input autocomplete="off" type="checkbox"> Unclaimed Gift Card Pin Guessing</label>
-        <label><input autocomplete="off" type="checkbox"> Password Policy Reuse Abuse</label>
-        <label><input autocomplete="off" type="checkbox"> Identify and Credit Theft Verification</label>
-        <label><input autocomplete="off" type="checkbox"> Scene News: Warez, cracks, rips</label>
-        <label><input autocomplete="off" type="checkbox"> Ransomware, Cryptoware opt-in</label>
-        <label><input autocomplete="off" type="checkbox"> Fixer Upper Fixer Downer| Drugless Euphoria</label>
-        <label><input autocomplete="off" type="checkbox"> COVID-19 Coronaviruses (CoV) status</label>
-      </div>
-    </section>
-  </span>
-
-    <div style="display:none;" id="stats">
-      <a href="running1" id="running1"></a>
-      <section class="row" id="run1">
-        <hr class="marginbottom">
-        <div class="col16">
-          <div id="graph" name="graph"></div>
-          <div id="pack" name="pack"></div>
-          <div style="display:none;">
-            <form name="f0" id="f0"></form>
-          </div>
-
-        </div>
-
+        <hr>
       </section>
-
-    </div>
-
-    <section class="row">
-      <div class="col16" style="margin-bottom:-125px">
-        
-	      <!-- show adds-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- responsive verticle -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7432498983055520"
-     data-ad-slot="7272511864"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-&nbsp;
-<br/>
-	      
-        <div class="iframewrap">
-          <div class="wrap">
-            <iframe name="my_iframe" class="iframe1" sandbox="" referrerpolicy="no-referrer" src=""></iframe>
+      <section class="row" id="features">
+        <div class="col7">
+          <!-- show adds-->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- responsive verticle -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7432498983055520"
+            data-ad-slot="7272511864"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          &nbsp;
+          <br/>	      
+        </div>
+        <code>
+        <div class="col9">
+          <h2>Fill your inbox with email.</h2>
+          <h3>Submit your address to thousands of online forms.</h3>
+          <label for=".mbe">Email Address to Fill</label>
+          <input type="email" name=".mbe" id=".mbe" value="" required="required" placeholder="YourEmail@address.com" />
+          <div style="display:block;" id="runt">
+            <input type="submit" value="Run MailBait"
+              onclick="document.getElementById('settings').style.display='block';document.getElementById('runt').style.display='none';document.getElementById('stats').style.display='block';callTheJsonp();" />
+            <br /> By clicking [Run MailBait] you agree to the <a href="terms.html">Terms of Use</a>.<br />
+          </div>
+          <div style="display:none;" id="settings">
+            <!-- <em>Allow popups on mailbait.info to run this service.</em> -->
+            <label for="selector" id="speedlabel">Speed <a href="faq.html#speed" title="speed explained">[ ? ]</a></label>
+            <select name="speed" id="speed">
+              <option selected="selected" value="5000">12 per minute</option>
+            </select>
+            <!--
+              <label for="windowclose">Popups</label>
+              <input type="checkbox" id="windowclose" checked="checked" value="YES" /> post forms in background<br/>
+              -->
+            <label for="pause" id="pauselbl">Active (MailBait is currrently <a href="#running1"
+              style="color:green;">running below</a>. This tab must remain open.)</label>
+            <div style="display:none;"> <input type="checkbox" name="pause" id="pause" /> Pause progress <br /> </div>
+            <input id="pausebtn" type="submit" value="Pause MailBait"
+              onclick="if(document.getElementById('pause').checked==false){document.getElementById('pause').checked=true;document.getElementById('pausebtn').value='Run MailBait';document.getElementById('pauselbl').innerHTML='Resume <em>(MailBait is currently <span style=color:darkorange>PAUSED</span>)</em>';}else{document.getElementById('pause').checked=false;document.getElementById('pausebtn').value='Pause MailBait';document.getElementById('pauselbl').innerHTML='Active (MailBait is currently <a href=#running1 style=color:green;>running below</a>. This tab must remain open.)';};">
+            <div><input autocomplete="off" id="categories1" name="categories1" type="checkbox" checked="checked"
+              onClick="document.getElementById('features1').style.display='block';if(document.getElementById('categories1').checked==false){document.getElementById('features1').style.display='none'}">
+              Show Mail Categories
+            </div>
+            <div id="https" style="display:none;">
+              <a href="http://MailBait.info/run.html">Click here</a> to access MailBait without HTTPS.  This reduces warning alerts.
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <section class="row">
-      <div class="col16" style="margin-bottom:">
-        <div id="SlappyAdsDetected">
-          MailBait is made possible for <span class="glow">FREE</span> by displaying advertisements which appear to be blocked.<Br />
-          Thank you for supporting us.
+        <a href="pro" id="pro"></a>
+        <div class="containerkey" style="width:100%"><br />Pro tools current. Extended Categories activated until key
+          expires at <span id='active' name='active'></span>
         </div>
-        <div id="result" name="result"></div>
-
+      </section>
+      <span id="features1" name="features1" style="font-size: 75% !important;display:;">
+        <section class="row">
+          <div class="col16" style="margin-bottom:-20px;text-align: left;">
+            <h2>Select categories of interest:</h2>
+          </div>
+        </section>
+        <section class="row" >
+          <div class="col3 category mbstandard">
+            <h3 style="border-bottom: 2px solid black;">Standard Categories</h3>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> College and University Classes</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Open Source Software / Coding</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Uber, Lyft, Meal and Grocery Delivery</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Vet, Pet, and lawn care</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Late-night radio, UFO, and Conspiracy</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Word of the Day, Daily Verse</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Funny Cat and Dog Videos</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Enterprise Server IT resources</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Fortune 500 infrastructure</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Politicals and Local Government</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Vitamin, Protein, Vegan, Beyond Meat</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Supplement and Beauty products</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Personalized and Custom Rings</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Quilting, Crafting, Minatures</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Tabletop Gaming News</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Car, Motercycle, Boat Insurance</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Variable annuity life Insurance</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Wine tasting and Van Life</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Levitating free energy</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Productivity Boosting strageies</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Ethically Sourced Elitism and Cults</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Communication, web-development, Search Engines</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> UAE, Dubai Vacations and Real Estate</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Drone Capturing and UAV LIoN Recovery</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Cord Blood and Stem Cell Research</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Fun, Liesure, Photos, Instagram</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Fraudential Package en route Redirection</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Essays in 2 words, Doctorals in 3</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Mugshot and Public Record Expungement</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Pet Medical Insurance Discounts</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Cybersecurity EMI modules</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Ductile Disfunction</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Lifetime warranty Refund</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Reddit Memes</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Life Pro Tips</label>
+            <label><input autocomplete="off" type="checkbox" checked='checked'> Election Erection Suggestion</label>
+          </div>
+          <div class="col3 category mbpro" style="">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- responsive verticle -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7432498983055520"
+              data-ad-slot="7272511864" data-ad-format="auto" data-full-width-responsive="true">
+            </ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            &nbsp;
+          </div>
+          <div class="col4 category mbpro" style="">
+            <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
+            <label><input autocomplete="off" type="checkbox"> Sport Cars, On and Off-Road Racing, and Rally</label>
+            <label><input autocomplete="off" type="checkbox"> Car Insurance: AAA, Progressive, NJM, State Farm </label>
+            <label><input autocomplete="off" type="checkbox"> AllState, Geico, LIberty Mutual, Met LIfe, safeco</label>
+            <label><input autocomplete="off" type="checkbox"> Sports: Horse racing, NFL, PGA Golf, MLB Baseball</label>
+            <label><input autocomplete="off" type="checkbox"> Mental and Physical Health, wellness</label>
+            <label><input autocomplete="off" type="checkbox"> Classifieds, craigslist, FB Marketplace</label>
+            <label><input autocomplete="off" type="checkbox"> Retirement and Benefit Calculator</label>
+            <label><input autocomplete="off" type="checkbox"> Collections and Medical invoice double-billing</label>
+            <label><input autocomplete="off" type="checkbox"> Transferable Life-insurance policies</label>
+            <label><input autocomplete="off" type="checkbox"> Cheap Flight and travel discounts</label>
+            <label><input autocomplete="off" type="checkbox"> Dumpster fire interpretive art and dance</label>
+            <label><input autocomplete="off" type="checkbox"> AI and Neural-Net generated portraits</label>
+            <label><input autocomplete="off" type="checkbox"> Travel Agent Fare and Flight Tracking</label>
+            <label><input autocomplete="off" type="checkbox"> Involuntary Drug Testing, Trials, and Screening</label>
+            <label><input autocomplete="off" type="checkbox"> Secret Shopper, Angies List, Yelp reviews</label>
+            <label><input autocomplete="off" type="checkbox"> Job Search, Dice, Monster, Indeed, Linkedin</label>
+            <label><input autocomplete="off" type="checkbox"> Recruiting, Placement, and Union Jobs</label>
+            <label><input autocomplete="off" type="checkbox"> Checking, Credit Restoration</label>
+            <label><input autocomplete="off" type="checkbox"> Sustainability, Offgrid, and Survival</label>
+            <label><input autocomplete="off" type="checkbox"> Elder-care, assisted living, and nursing homes</label>
+            <label><input autocomplete="off" type="checkbox"> Commercial and Residential Real Estate</label>
+            <label><input autocomplete="off" type="checkbox"> Adult MP3, 18+</label>
+            <label><input autocomplete="off" type="checkbox"> NSFW, *Hub, lingerie</label>
+            <label><input autocomplete="off" type="checkbox"> Surveys, questionaires, personality tests</label>
+            <label><input autocomplete="off" type="checkbox"> Purity Test results after middle-age</label>
+            <label><input autocomplete="off" type="checkbox"> Pay-Day and Same-Day Loans, Mortgage Refinancing</label>
+            <label><input autocomplete="off" type="checkbox"> Box Office Movies, Music, Entertainment</label>
+            <label><input autocomplete="off" type="checkbox"> BOA,Capital One,Chase,wells fargo,citigroup</label>
+            <label><input autocomplete="off" type="checkbox"> AARP, Carnival Cruise, Royal Caribbean</label>
+            <label><input autocomplete="off" type="checkbox"> Asteroid and Commet Speculative Mining</label>
+            <label><input autocomplete="off" type="checkbox"> Fishing, Hunting, Outdoors</label>
+            <label><input autocomplete="off" type="checkbox"> Video Games, XBOX, PS4, FPS, MMORG</label>
+            <label><input autocomplete="off" type="checkbox"> Emergency services and Urgent Care</label>
+            <label><input autocomplete="off" type="checkbox"> Facebook, Social Media Influencers, Twitter</label>
+            <label><input autocomplete="off" type="checkbox"> Criminal Attorney, BailBonds</label>
+            <label><input autocomplete="off" type="checkbox"> Last of Us 2 Griefers</label>
+            <label><input autocomplete="off" type="checkbox"> Hemorrhoid Permanent Makeup</label>
+            <label><input autocomplete="off" type="checkbox"> ID Enhancement and Age Selection</label>
+            <label><input autocomplete="off" type="checkbox"> Horoscope and Astrology Spirit Animals</label>
+            <label><input autocomplete="off" type="checkbox"> Vegan-based Diet bio performance</label>
+            <label><input autocomplete="off" type="checkbox"> Engrish as a second language ESL Resources</label>
+          </div>
+          <div class="col3 category mbpro">
+            <h3 style="border-bottom: 2px solid blue;">Pro Categories</h3>
+            <label><input autocomplete="off" type="checkbox"> Sweepstakes and Gambling</label>
+            <label><input autocomplete="off" type="checkbox"> Non-Profit, Religious, and Fundraising</label>
+            <label><input autocomplete="off" type="checkbox"> Dating, LGBTQIA+ and Hookup apps</label>
+            <label><input autocomplete="off" type="checkbox"> Work From Home, Home Business</label>
+            <label><input autocomplete="off" type="checkbox"> Piercings, Tattoos, Scarification</label>
+            <label><input autocomplete="off" type="checkbox"> UFC, MMA, BJJ, Karate, Fitness</label>
+            <label><input autocomplete="off" type="checkbox"> Phone and mobile hardware</label>
+            <label><input autocomplete="off" type="checkbox"> Laser, Plasma, and Heavy Machining</label>
+            <label><input autocomplete="off" type="checkbox"> FTL, LTL, and Long Haul Trucking</label>
+            <label><input autocomplete="off" type="checkbox"> Hitachi, Volvo, John Deere, JCB</label>
+            <label><input autocomplete="off" type="checkbox"> Investing, Stocks, Daytrading</label>
+            <label><input autocomplete="off" type="checkbox"> Luxury appearal and Zales Jewelry</label>
+            <label><input autocomplete="off" type="checkbox"> Anime, Cosplay, LARP</label>
+            <label><input autocomplete="off" type="checkbox"> Vacation, Holiday, and Travel</label>
+            <label><input autocomplete="off" type="checkbox"> A Dolt: Script Club</label>
+            <label><input autocomplete="off" type="checkbox"> Pole Prancing, Live Noobs</label>
+            <label><input autocomplete="off" type="checkbox"> OTC, Prescription, and Pharamacy</label>
+            <label><input autocomplete="off" type="checkbox"> Coupons, Daily Deals, SlickDeals</label>
+            <label><input autocomplete="off" type="checkbox"> Japenese vending machine hacks</label>
+            <label><input autocomplete="off" type="checkbox"> Laptop, Desktop, AMD vs Intel</label>
+            <label><input autocomplete="off" type="checkbox"> Turbo Tax, Tax Act, H&R Block</label>
+            <label><input autocomplete="off" type="checkbox"> Dark Crystal Therapy and healing</label>
+            <label><input autocomplete="off" type="checkbox"> Dollhouse estate planning</label>
+            <label><input autocomplete="off" type="checkbox"> mesothelioma machine learning</label>
+            <label><input autocomplete="off" type="checkbox"> Socks, Sandles and the northwest</label>
+            <label><input autocomplete="off" type="checkbox"> Rare-Earth Minerial Harvesting</label>
+            <label><input autocomplete="off" type="checkbox"> Mid-Fight Refueling</label>
+            <label><input autocomplete="off" type="checkbox"> IoT Mesh Yagi kBand Breach</label>
+            <label><input autocomplete="off" type="checkbox"> Contract Breach Audits</label>
+            <label><input autocomplete="off" type="checkbox"> HIPPA PCI Compliance Shortcuts</label>
+            <label><input autocomplete="off" type="checkbox"> Bleacher Graduate Rodeo Studies</label>
+            <label><input autocomplete="off" type="checkbox"> Yakuza Pedicure/Manicure</label>
+            <label><input autocomplete="off" type="checkbox"> DOT Prison Currency Transfers</label>
+            <label><input autocomplete="off" type="checkbox"> Student buy Essay Services</label>
+            <label><input autocomplete="off" type="checkbox"> Internships, and Intern Interment</label>
+            <label><input autocomplete="off" type="checkbox"> MS Scarlett Feaver</label>
+            <label><input autocomplete="off" type="checkbox"> PS5 pre-release specs</label>
+            <label><input autocomplete="off" type="checkbox"> Prenuptial Escape Clauses</label>
+            <label><input autocomplete="off" type="checkbox"> Reward, Gas, and Cash Back Cards </label>
+            <label><input autocomplete="off" type="checkbox"> Medicare Advantage Plans</label>
+            <label><input autocomplete="off" type="checkbox"> Pandemic Mitigation Plans</label>
+          </div>
+          <div class="col3 category mbproplus" style="font-size: 80% !important">
+            <h4 style="border-bottom: 2px solid red;">Pro+ Categories</h4>
+            <label><input autocomplete="off" type="checkbox"> Exclude all CAPTCHA Forms</label>
+            <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
+            <label><input autocomplete="off" type="checkbox"> Personal Escort services</label>
+            <label><input autocomplete="off" type="checkbox"> Mammalian genital enhancement</label>
+            <label><input autocomplete="off" type="checkbox"> DWI/ DUI loss of vehicle license therapy</label>
+            <label><input autocomplete="off" type="checkbox"> Bath salts and recreational creativity</label>
+            <label><input autocomplete="off" type="checkbox"> One way vacations</label>
+            <label><input autocomplete="off" type="checkbox"> Reptile husbandry</label>
+            <label><input autocomplete="off" type="checkbox"> Darkweb entrapment</label>
+            <label><input autocomplete="off" type="checkbox"> Trade-war shortcuts and FBA</label>
+            <label><input autocomplete="off" type="checkbox"> Wikileaks 0day</label>
+            <label><input autocomplete="off" type="checkbox"> Involuntary wealth redistribution and taxes</label>
+            <label><input autocomplete="off" type="checkbox"> unlawful termination, workman's comp, and the investigators
+            that find them</label>
+            <label><input autocomplete="off" type="checkbox"> Remote surveillance of the paranoid</label>
+            <label><input autocomplete="off" type="checkbox"> Vehicle repossession enrollment</label>
+            <label><input autocomplete="off" type="checkbox"> Phone tracking enrollment</label>
+            <label><input autocomplete="off" type="checkbox"> Jury duty auto enrollment</label>
+            <label><input autocomplete="off" type="checkbox"> IRS/Tax auditing enrollment</label>
+            <label><input autocomplete="off" type="checkbox"> STD diagnosis and treatments</label>
+            <label><input autocomplete="off" type="checkbox"> just-the-tip of the day</label>
+            <label><input autocomplete="off" type="checkbox"> Nude Beach Satellite Imaginary</label>
+            <label><input autocomplete="off" type="checkbox"> Asset forfeiture and seizure enrollment</label>
+            <label><input autocomplete="off" type="checkbox"> Gun ownership state audits and registration</label>
+            <label><input autocomplete="off" type="checkbox"> Unstable love poems for stalkers</label>
+            <label><input autocomplete="off" type="checkbox"> Butte, MT PlugShare</label>
+            <label><input autocomplete="off" type="checkbox"> Pet cloning</label>
+            <label><input autocomplete="off" type="checkbox"> Disney bedtime phone hotline</label>
+            <label><input autocomplete="off" type="checkbox"> Biblical Praportions and Principles</label>
+            <label><input autocomplete="off" type="checkbox"> End of life photography</label>
+            <label><input autocomplete="off" type="checkbox"> Chinesium Trade Secrets and Quality Assurance</label>
+            <label><input autocomplete="off" type="checkbox"> Hair implant thongs</label>
+            <label><input autocomplete="off" type="checkbox"> Penetration Testing, Lockpicks, Chasity Belts</label>
+            <label><input autocomplete="off" type="checkbox"> Vigilante Internships</label>
+            <label><input autocomplete="off" type="checkbox"> CV /Resume bulk submissions, recruiting, networking</label>
+            <label><input autocomplete="off" type="checkbox"> Rectal Rodeo clowns</label>
+            <label><input autocomplete="off" type="checkbox"> Lien enforcement</label>
+            <label><input autocomplete="off" type="checkbox"> Personal Fluid and Bacteria transplant</label>
+            <label><input autocomplete="off" type="checkbox"> Personal Injury Attorney and Law</label>
+            <label><input autocomplete="off" type="checkbox"> Unclaimed Gift Card Pin Guessing</label>
+            <label><input autocomplete="off" type="checkbox"> Password Policy Reuse Abuse</label>
+            <label><input autocomplete="off" type="checkbox"> Identify and Credit Theft Verification</label>
+            <label><input autocomplete="off" type="checkbox"> Scene News: Warez, cracks, rips</label>
+            <label><input autocomplete="off" type="checkbox"> Ransomware, Cryptoware opt-in</label>
+            <label><input autocomplete="off" type="checkbox"> Fixer Upper Fixer Downer| Drugless Euphoria</label>
+            <label><input autocomplete="off" type="checkbox"> COVID-19 Coronaviruses (CoV) status</label>
+          </div>
+        </section>
+      </span>
+      <div style="display:none;" id="stats">
+        <a href="running1" id="running1"></a>
+        <section class="row" id="run1">
+          <hr class="marginbottom">
+          <div class="col16">
+            <div id="graph" name="graph"></div>
+            <div id="pack" name="pack"></div>
+            <div style="display:none;">
+              <form name="f0" id="f0"></form>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <footer>
-      <hr class="marginbottom">
-      <div class="col1_3">
-        <h6><span id="footer-copyright"></span></h6><br />
-      </div>
-      <div class="col1_3">
-        <h6><a href="https://twitter.com/share" class="twitter-share-button" data-url="MailBait.info"
-            data-text="Fill your inbox. MailBait.info">Tweet</a>
-          <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-        </h6> <br />
-      </div>
-      <div class="col1_3">
-        <h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a>
-        </h6><br />
-      </div>
-    </footer>
-
-
-
-
-  </div>
-
-  <script type="text/javascript">
-    var d = new Date();
-    var n = d.getFullYear();
-    document.getElementById('footer-copyright').innerHTML = '&copy; MailBait ' + n;
-  </script>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-23915961-2']);
-    _gaq.push(['_trackPageview']);
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-  <script type="text/javascript">
-
-   //on https, show alert it may not work well
-
-   if (location.protocol == 'https:'){
-     document.getElementById('https').style.display='block';
-   }
-
-    document.addEventListener('DOMContentLoaded', init, false);
-    function init() {
-      adsBlocked(function (blocked) {
-        if (blocked) {
-          //add blocked, turn on message in slappyads, turn on speed label, disable faster speeds.  yup.
-          //document.getElementById('result').innerHTML = 'ads are blocked';
-          document.getElementById('SlappyAdsDetected').style.display = 'block';
-          document.getElementById('speedlabel').innerHTML = "Speed: (disable Ad b lock for faster speed options)"
-          //speedlabel Speed: (disable Adblock for more speed)
-          //minimize speed options
-          _gaq.push(['_trackEvent', 'ads', 'BLOCKED(adblock)']);
-        } else {
-          //document.getElementById('result').innerHTML = 'ads are not blocked';
-          //add more speed options
-          _gaq.push(['_trackEvent', 'ads', 'Shown']);
-          var x = document.getElementById("speed");
-          var option1 = document.createElement("option");
-          var option2 = document.createElement("option");
-          var option3 = document.createElement("option");
-          var option4 = document.createElement("option");
-          option1.text = "20 per minute";
-          option1.value = "3000";
-          x.add(option1);
-          option2.text = "30 per minute";
-          option2.value = "2000";
-          x.add(option2);
-          option3.text = "45 per minute";
-          option3.value = "1500";
-          x.add(option3);
-          option4.text = "60 per minute";
-          option4.value = "1000";
-          x.add(option4);
-          //<option value="3000">20 per minute</option>
-          //<option value="2000">30 per minute</option>
-          //<option value="1500">45 per minute</option>
-          //<option value="1000">60 per minute</option>
-        }
-      })
-    }
-    function adsBlocked(callback) {
-	//    return true;
-	    
-      var testURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-      var myInit = {
-        method: 'HEAD',
-        mode: 'no-cors'
-      };
-      var myRequest = new Request(testURL, myInit);
-      fetch(myRequest).then(function (response) {
-        return response;
-      }).then(function (response) {
-        console.log(response);
-        callback(false)
-      }).catch(function (e) {
-        console.log(e)
-        callback(true)
-      });
-    }
-  </script>
-
-
-  <script>
-    // MAILBAITPRO keys available from , oh, wait.  they aren't.  get out of this code.
-    function setCookie(cname, cvalue, exdays) {
+      <section class="row">
+        <div class="col16" style="margin-bottom:-125px">
+          <!-- show adds-->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- responsive verticle -->
+          <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7432498983055520"
+            data-ad-slot="7272511864"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          &nbsp;
+          <br/>
+          <div class="iframewrap">
+            <div class="wrap">
+              <iframe name="my_iframe" class="iframe1" sandbox="" referrerpolicy="no-referrer" src=""></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="col16" style="margin-bottom:">
+          <div id="SlappyAdsDetected">
+            MailBait is made possible for <span class="glow">FREE</span> by displaying advertisements which appear to be blocked.<Br />
+            Thank you for supporting us.
+          </div>
+          <div id="result" name="result"></div>
+        </div>
+      </section>
+      <footer>
+        <hr class="marginbottom">
+        <div class="col1_3">
+          <h6><span id="footer-copyright"></span></h6>
+          <br />
+        </div>
+        <div class="col1_3">
+          <h6>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="MailBait.info"
+              data-text="Fill your inbox. MailBait.info">Tweet</a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "http://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+          </h6>
+          <br />
+        </div>
+        <div class="col1_3">
+          <h6><a href="terms.html">Terms Of Use</a> - <a href="sitemap.html">Site Map</a> - <a href="login.html">Login</a>
+          </h6>
+          <br />
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
       var d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      var expires = "expires=" + d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    } //setcookie
-    function getCookie(cname) {
-      var name = cname + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
+      var n = d.getFullYear();
+      document.getElementById('footer-copyright').innerHTML = '&copy; MailBait ' + n;
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23915961-2']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript">
+      //on https, show alert it may not work well
+      
+      if (location.protocol == 'https:'){
+        document.getElementById('https').style.display='block';
       }
-      return "";
-    } //getcookie
-    function setKey(key) {
-      if (key != "" && key != null) {
-        setCookie("key", key, 365);
-      }
-    } //setKey
-    checkKey();
-    function checkKey() {
-      var key = getCookie("key");
-      if (MakeAppleSauce(key) == true) {
-        //alert("Welcome again " + key);
-        active = "categories are processed";
-        var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
-        for (var i = 0; i < elements.length; i++) {
-          elements[i].style.display = "inline";
+      
+       document.addEventListener('DOMContentLoaded', init, false);
+       function init() {
+         adsBlocked(function (blocked) {
+           if (blocked) {
+             //add blocked, turn on message in slappyads, turn on speed label, disable faster speeds.  yup.
+             //document.getElementById('result').innerHTML = 'ads are blocked';
+             document.getElementById('SlappyAdsDetected').style.display = 'block';
+             document.getElementById('speedlabel').innerHTML = "Speed: (disable Ad b lock for faster speed options)"
+             //speedlabel Speed: (disable Adblock for more speed)
+             //minimize speed options
+             _gaq.push(['_trackEvent', 'ads', 'BLOCKED(adblock)']);
+           } else {
+             //document.getElementById('result').innerHTML = 'ads are not blocked';
+             //add more speed options
+             _gaq.push(['_trackEvent', 'ads', 'Shown']);
+             var x = document.getElementById("speed");
+             var option1 = document.createElement("option");
+             var option2 = document.createElement("option");
+             var option3 = document.createElement("option");
+             var option4 = document.createElement("option");
+             option1.text = "20 per minute";
+             option1.value = "3000";
+             x.add(option1);
+             option2.text = "30 per minute";
+             option2.value = "2000";
+             x.add(option2);
+             option3.text = "45 per minute";
+             option3.value = "1500";
+             x.add(option3);
+             option4.text = "60 per minute";
+             option4.value = "1000";
+             x.add(option4);
+             //<option value="3000">20 per minute</option>
+             //<option value="2000">30 per minute</option>
+             //<option value="1500">45 per minute</option>
+             //<option value="1000">60 per minute</option>
+           }
+         })
+       }
+       function adsBlocked(callback) {
+      //    return true;
+        
+         var testURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+         var myInit = {
+           method: 'HEAD',
+           mode: 'no-cors'
+         };
+         var myRequest = new Request(testURL, myInit);
+         fetch(myRequest).then(function (response) {
+           return response;
+         }).then(function (response) {
+           console.log(response);
+           callback(false)
+         }).catch(function (e) {
+           console.log(e)
+           callback(true)
+         });
+       }
+    </script>
+    <script>
+      // MAILBAITPRO keys available from , oh, wait.  they aren't.  get out of this code.
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      } //setcookie
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
         }
-      } else {
-        //key = prompt("Please enter your key:", "");
-        //setKey(key);
-      }
-    } //checkKey
-    //setup adsense2
-    function divedeep(src, srctable, desttable) {
-      var srclen = srctable.length; var destlen = desttable.length; var val = 0; var numlen = src.length; for (var i = 0; i < numlen; i++) { val = val * srclen + srctable.indexOf(src.charAt(i)); }
-      if (val < 0) { return 0; }
-      var r = val % destlen; var res = desttable.charAt(r); var q = Math.floor(val / destlen); while (q) { r = q % destlen; q = Math.floor(q / destlen); res = desttable.charAt(r) + res; }
-      return res;
-    } //adsense2
-    function MakeAppleSauce(seed) {
-      try {
-        var B10 = "0123456789";
-        var B32 = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
-        var test = divedeep(seed, B32, B10);
-        var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
-        var t = test.slice(4, 10)
-        Date.prototype.addDays = function (d) { return new Date(this.valueOf() + 864E5 * d); };
-        var d2 = Date.parse("01/01/2019");
-        var date = new Date();
-        var date2 = new Date('2019-01-01T00:00:00');
-        var star = date2.addDays(d);
-        var endd = date2.addDays(d).addDays(t);
-        document.getElementById('active').innerHTML = endd; //show date
-        if ((date >= star) && (endd >= date) && (t < 100)) {
-          out = true;
+        return "";
+      } //getcookie
+      function setKey(key) {
+        if (key != "" && key != null) {
+          setCookie("key", key, 365);
+        }
+      } //setKey
+      checkKey();
+      function checkKey() {
+        var key = getCookie("key");
+        if (MakeAppleSauce(key) == true) {
+          //alert("Welcome again " + key);
+          active = "categories are processed";
+          var elements = document.querySelectorAll('.containerkey'); //view all class=containerkey items
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = "inline";
+          }
         } else {
+          //key = prompt("Please enter your key:", "");
+          //setKey(key);
+        }
+      } //checkKey
+      //setup adsense2
+      function divedeep(src, srctable, desttable) {
+        var srclen = srctable.length; var destlen = desttable.length; var val = 0; var numlen = src.length; for (var i = 0; i < numlen; i++) { val = val * srclen + srctable.indexOf(src.charAt(i)); }
+        if (val < 0) { return 0; }
+        var r = val % destlen; var res = desttable.charAt(r); var q = Math.floor(val / destlen); while (q) { r = q % destlen; q = Math.floor(q / destlen); res = desttable.charAt(r) + res; }
+        return res;
+      } //adsense2
+      function MakeAppleSauce(seed) {
+        try {
+          var B10 = "0123456789";
+          var B32 = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
+          var test = divedeep(seed, B32, B10);
+          var d = (test.slice(0, 4).split("").reverse().join("") - 1001) / 2;
+          var t = test.slice(4, 10)
+          Date.prototype.addDays = function (d) { return new Date(this.valueOf() + 864E5 * d); };
+          var d2 = Date.parse("01/01/2019");
+          var date = new Date();
+          var date2 = new Date('2019-01-01T00:00:00');
+          var star = date2.addDays(d);
+          var endd = date2.addDays(d).addDays(t);
+          document.getElementById('active').innerHTML = endd; //show date
+          if ((date >= star) && (endd >= date) && (t < 100)) {
+            out = true;
+          } else {
+            out = false;
+          }
+        } catch (err) {
+          console.log(err);
           out = false;
         }
-      } catch (err) {
-        console.log(err);
-        out = false;
+        return out;
+      }  //makeapplesauce
+    </script>
+    <script type="text/javascript">
+      //global vars so we can handle non-blocking IO
+      totalpacks = 747; //CHANGE THIS when add more formpack, how many packs of jsonp files we have.
+      packcount = 0; // global count of how many packs processed
+      sends = 0; //global cound of how many forms sent
+      pCount = 0; //how many forms in this pack
+      rX = 0;  //which resposne we're on currently
+      JSON = ''; //where we store this jsonp response to process
+      i = 0;  //where we are at in the pack, which form we're on
+      var pack = getQuerystring("pack", Math.floor(Math.random() * (totalpacks))) - 1; //start between 0 and 122
+      console.log(pack + 1);
+      //var prevent_bust = 0;  //frame busting variable  
+      //win2 = window.open("", "Window2", "width=200,height=200,scrollbars=yes");
+      //jsCount = 1;  //count down
+      var n1 = "Michael Christopher Matthew Joshua Andrew Brandon Daniel Tyler James David Joseph Nicholas Ryan John Jacob Zachary Robert Justin Anthony William Jonathan Kyle Alexander Cody Kevin Ashley Jessica Amanda Brittany Sarah Samantha Emily Stephanie Elizabeth Megan Jennifer Lauren Kayla Nicole Chelsea Rachel Taylor Danielle Amber Rebecca Courtney Victoria Kelsey Melissa Michelle Charles Steven Gary Joseph Donald Ronald Kenneth Paul Larry Daniel Stephen Dennis Timothy Edward Jeffrey George Gregory Kevin Douglas Terry Anthony Jerry Bruce Randy Brian Frank Scott Roger Raymond Peter Patrick Keith Lawrence Wayne Danny Alan Gerald Ricky Carl Christopher Dale Walter Craig Willie Johnny Arthur Steve Joe Randall Jack Russell Henry Harold Mary Linda Patricia Susan Deborah Barbara Debra Karen Nancy Donna Cynthia Sandra Pamela Sharon Kathleen Carol Diane Brenda Cheryl Janet Elizabeth Kathy Margaret Janice Carolyn Denise Judy Rebecca Joyce Teresa Christine Catherine Shirley Judith Betty Beverly Lisa Laura Theresa Connie Ann Julie Gloria Gail Joan Paula Peggy Cindy Martha Bonnie Jane Cathy Robin Debbie Diana Marilyn Kathryn Dorothy Wanda Jean Vicki Sheila";
+      var n2 = "Smith Johnson Williams Jones Brown Davis Miller Wilson Moore Taylor Anderson Thomas Jackson White Harris Martin Thompson Garcia Martinez Robinson Clark Rodriguez Lewis Lee Walker Hall Allen Young Hernandez King Wright Lopez Hill Scott Green Adams Baker Gonzalez Nelson Carter Mitchell Perez Roberts Turner Phillips Campbell Parker Evans Edwards Collins Stewart Sanchez Morris Rogers Reed Cook Morgan Bell Murphy Bailey Rivera Cooper Richardson Cox Howard Ward Torres Peterson Gray Ramirez James Watson Brooks Kelly Sanders Price Bennett Wood Barnes Ross Henderson Coleman Jenkins Perry Powell Long Patterson Hughes Flores Washington Butler Simmons Foster Gonzales Bryant Alexander Russell Griffin Diaz Hayes";
+      var n3 = "! ? # $ ! . - +"
+      var nn1 = n1.split(" ");
+      var nn2 = n2.split(" ");
+      var nn3 = n3.split(" ");
+      fname = nn1[Math.round((Math.random() * (nn1.length - 1)))];
+      lname = nn2[Math.round((Math.random() * (nn2.length - 1)))];
+      name = fname + ' ' + lname;
+      pword = nn3[Math.round((Math.random() * (nn3.length - 1)))] + nn1[Math.round((Math.random() * (nn1.length - 1)))] + Math.round((Math.random() * 9));
+      console.log(name);
+      console.log(pword);
+      function getQuerystring(key, default_) {
+        if (default_ == null) default_ = "";
+        key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+        var qs = regex.exec(window.location.href);
+        if (qs == null)
+          return default_;
+        else
+          return qs[1];
       }
-      return out;
-    }  //makeapplesauce
-  </script>
-	
-	<script type="text/javascript">
-    //global vars so we can handle non-blocking IO
-    totalpacks = 747; //CHANGE THIS when add more formpack, how many packs of jsonp files we have.
-    packcount = 0; // global count of how many packs processed
-    sends = 0; //global cound of how many forms sent
-    pCount = 0; //how many forms in this pack
-    rX = 0;  //which resposne we're on currently
-    JSON = ''; //where we store this jsonp response to process
-    i = 0;  //where we are at in the pack, which form we're on
-    var pack = getQuerystring("pack", Math.floor(Math.random() * (totalpacks))) - 1; //start between 0 and 122
-    console.log(pack + 1);
-    //var prevent_bust = 0;  //frame busting variable  
-    //win2 = window.open("", "Window2", "width=200,height=200,scrollbars=yes");
-    //jsCount = 1;  //count down
-    var n1 = "Michael Christopher Matthew Joshua Andrew Brandon Daniel Tyler James David Joseph Nicholas Ryan John Jacob Zachary Robert Justin Anthony William Jonathan Kyle Alexander Cody Kevin Ashley Jessica Amanda Brittany Sarah Samantha Emily Stephanie Elizabeth Megan Jennifer Lauren Kayla Nicole Chelsea Rachel Taylor Danielle Amber Rebecca Courtney Victoria Kelsey Melissa Michelle Charles Steven Gary Joseph Donald Ronald Kenneth Paul Larry Daniel Stephen Dennis Timothy Edward Jeffrey George Gregory Kevin Douglas Terry Anthony Jerry Bruce Randy Brian Frank Scott Roger Raymond Peter Patrick Keith Lawrence Wayne Danny Alan Gerald Ricky Carl Christopher Dale Walter Craig Willie Johnny Arthur Steve Joe Randall Jack Russell Henry Harold Mary Linda Patricia Susan Deborah Barbara Debra Karen Nancy Donna Cynthia Sandra Pamela Sharon Kathleen Carol Diane Brenda Cheryl Janet Elizabeth Kathy Margaret Janice Carolyn Denise Judy Rebecca Joyce Teresa Christine Catherine Shirley Judith Betty Beverly Lisa Laura Theresa Connie Ann Julie Gloria Gail Joan Paula Peggy Cindy Martha Bonnie Jane Cathy Robin Debbie Diana Marilyn Kathryn Dorothy Wanda Jean Vicki Sheila";
-    var n2 = "Smith Johnson Williams Jones Brown Davis Miller Wilson Moore Taylor Anderson Thomas Jackson White Harris Martin Thompson Garcia Martinez Robinson Clark Rodriguez Lewis Lee Walker Hall Allen Young Hernandez King Wright Lopez Hill Scott Green Adams Baker Gonzalez Nelson Carter Mitchell Perez Roberts Turner Phillips Campbell Parker Evans Edwards Collins Stewart Sanchez Morris Rogers Reed Cook Morgan Bell Murphy Bailey Rivera Cooper Richardson Cox Howard Ward Torres Peterson Gray Ramirez James Watson Brooks Kelly Sanders Price Bennett Wood Barnes Ross Henderson Coleman Jenkins Perry Powell Long Patterson Hughes Flores Washington Butler Simmons Foster Gonzales Bryant Alexander Russell Griffin Diaz Hayes";
-    var n3 = "! ? # $ ! . - +"
-    var nn1 = n1.split(" ");
-    var nn2 = n2.split(" ");
-    var nn3 = n3.split(" ");
-    fname = nn1[Math.round((Math.random() * (nn1.length - 1)))];
-    lname = nn2[Math.round((Math.random() * (nn2.length - 1)))];
-    name = fname + ' ' + lname;
-    pword = nn3[Math.round((Math.random() * (nn3.length - 1)))] + nn1[Math.round((Math.random() * (nn1.length - 1)))] + Math.round((Math.random() * 9));
-    console.log(name);
-    console.log(pword);
-    function getQuerystring(key, default_) {
-      if (default_ == null) default_ = "";
-      key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-      var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
-      var qs = regex.exec(window.location.href);
-      if (qs == null)
-        return default_;
-      else
-        return qs[1];
-    }
-    function callTheJsonp()  //start the next pack, and reset to the beginning of that pack.
-    {
-      pack = pack + 1; //always increment which jsonp pack we're loading
-      packcount = packcount + 1; //always inreement how many packs we've processed
-      i = 0 //reset to the first form in the pack.
-      if (pack > totalpacks) { pack = 0; }
-      if (pack < 0) { pack = 0; }
-      document.getElementById('pack').innerHTML = '<br/>Bookmark <a href="run.html?pack=' + pack + '">run.html?pack=' + pack + '</a> to resume later.';
-      //for test server
-      //if(String(document.location.href).substring(0,9)==='http://10'){ preurl='http://10.1.10.148/';}
-      // the url of the script where we send the asynchronous call
-      //if (1==jsonp_script)
-      //{
-      //  var url = preurl + "jsonp.js?callback=parseRequest";
-      //}
-      //else 
-      //{
-      //  var url = preurl + "jsonp.js?callback=parseRequest";
-      //}
-      // create a new script element
-      //var url = "jsonp.js?callback=parseRequest";
-      //var url = "http://www.mailbait.info.nyud.net/jsonp/jsonp"+pack+".js?callback=parseRequest";
-      var url = "/jsonp/jsonp" + pack + ".js?callback=parseRequest";
-      var script = document.createElement('script');
-      // set the src attribute to that url
-      script.setAttribute('src', url);
-      // insert the script in out page
-      document.getElementsByTagName('head')[0].appendChild(script);
-    }
-    // this function should parse responses.. you can do anything you need.. 
-    // you can make it general so it would parse all the responses the page receives based on a response field
-    function parseRequest(response) {
-      try // try to output this to the javascript console
+      function callTheJsonp()  //start the next pack, and reset to the beginning of that pack.
       {
-        JSON = response;
-        pCount = response.items.length;
-        //alert(pCount);
-        testform(); //test
-        //console.log(response);
-        //console.log(response.id);
-        //for (x in response.items)
+        pack = pack + 1; //always increment which jsonp pack we're loading
+        packcount = packcount + 1; //always inreement how many packs we've processed
+        i = 0 //reset to the first form in the pack.
+        if (pack > totalpacks) { pack = 0; }
+        if (pack < 0) { pack = 0; }
+        document.getElementById('pack').innerHTML = '<br/>Bookmark <a href="run.html?pack=' + pack + '">run.html?pack=' + pack + '</a> to resume later.';
+        //for test server
+        //if(String(document.location.href).substring(0,9)==='http://10'){ preurl='http://10.1.10.148/';}
+        // the url of the script where we send the asynchronous call
+        //if (1==jsonp_script)
         //{
-        //console.log(response.items[x]);
-        //need .mbAction
-        //need .mbMethod
-        //rest goes to payload.
-        //speed
-        //if (x ==1 )
-        // {
-        //console.log(response.items[x]);
-        //console.log(response.items[x]['.mba']);
-        //console.log(response.items[x]['.mbm']);
-        //response.items[x]['.mba'] = '';
-        //response.items[x]['.mbm'] = '';
-        //for (y in response.items[x])
+        //  var url = preurl + "jsonp.js?callback=parseRequest";
+        //}
+        //else 
         //{
-        //  if ( response.items[x][y] != '')
-        //  {
-        //   console.log(y + ' : ' + response.items[x][y]);
-        //setTimeout(function() { console.log(y + ' : ' + response.items[x][y]); }, 1000);
-        //  }
+        //  var url = preurl + "jsonp.js?callback=parseRequest";
         //}
-        //}
-        //pause(2000); //pause for 2 seconds
-        //setTimeout("a=2",1500);
-        //delay(1000);
-        //}
+        // create a new script element
+        //var url = "jsonp.js?callback=parseRequest";
+        //var url = "http://www.mailbait.info.nyud.net/jsonp/jsonp"+pack+".js?callback=parseRequest";
+        var url = "/jsonp/jsonp" + pack + ".js?callback=parseRequest";
+        var script = document.createElement('script');
+        // set the src attribute to that url
+        script.setAttribute('src', url);
+        // insert the script in out page
+        document.getElementsByTagName('head')[0].appendChild(script);
       }
-      catch (an_exception) // alert for the users that don't have a javascript console
-      {
-        //alert(response.script);
-      }
-    }
-    function pause(millisconds) {  //pause  - blocking.   do not use.
-      millisconds += new Date().getTime();
-      while (new Date() < millisconds) { /* Do nothing */ }
-    }
-    function removeChildrenRecursively(node) {
-      if (!node) return;
-      while (node.hasChildNodes()) {
-        removeChildrenRecursively(node.firstChild);
-        node.removeChild(node.firstChild);
-      }
-    }//end magic of dynamic posts / gets
-    function addField(form, fieldType, fieldName, fieldValue) { //begin magic of dynamic posts / gets   //allows us to call a function after the entire page has loaded - and NOW the html elements exist.  the on page load fires before the html elements exist.
-      if (document.getElementById) {
-        var input = document.createElement('INPUT');
-        if (document.all) { // what follows should work 
-          // with NN6 but doesn't in M14
-          input.type = fieldType;
-          input.name = fieldName;
-          input.value = fieldValue;
-        }
-        else if (document.getElementById) { // so here is the
-          // NN6 workaround
-          input.setAttribute('type', fieldType);
-          input.setAttribute('name', fieldName);
-          input.setAttribute('value', fieldValue);
-        }
-        form.appendChild(input);
-      }
-    }
-    function reverse(s) {
-      return s.split("").reverse().join("");
-    }
-    var active = "categories are skipped";
-    function testform() {
-      if (document.getElementById('pause').checked == false) {
-        sends = sends + 1; //increment counter of how many we've sent
-        //document.getElementById('iframe1').src='';
-        removeChildrenRecursively(document.forms['f0']);  //clear the previous form[0]
-        // document.forms['f0'].target='iframe1';
-        if (JSON.items[i]['.mbm'] == 'P') { document.forms['f0'].method = 'POST'; }
-        if (JSON.items[i]['.mbm'] == 'G') { document.forms['f0'].method = 'GET'; }
-        action = JSON.items[i]['.mba'];
-        switch (action.charAt(0)) {
-          case 'H': action = 'http://www.' + action.slice(1); break;
-          case 'S': action = 'https://www.' + action.slice(1); break;
-          case 'h': action = 'http://' + action.slice(1); break;
-          case 's': action = 'https://' + action.slice(1); break;
-        }
-        document.forms['f0'].action = action;
-        //JSON.items[i]['.mbm'] = '';
-        //JSON.items[i]['.mba'] = '';
-        for (y in JSON.items[i]) {
-          n1 = y;
-          //alert(n1);
-          if ((n1 != '.mba') && (n1 != '.mbs') && (n1 != '.mbu') && (n1 != '.mbm') && (n1 != '.mbid') && (n1 != '.mbadd') && (n1 != '.mbnewfield1') && (n1 != '.mbsave') && (n1 != '')) {
-            value1 = reverse(JSON.items[i][y]);
-            if (value1 == '[e]') { value1 = document.getElementById('.mbe').value; } //set outgoing email field - can be expanded later for more client variable masks
-            if (value1 == '[name]') { value1 = name; }
-            if (value1 == '[pw]') { value1 = pword; }
-            if (value1 != '') { addField(document.forms['f0'], 'text', n1, value1); }
-          }
-        }  //for
-        addField(document.forms['f0'], 'submit', 'mbbsubmit', '')
-        //var newwin = window.open('','Windows2');
-        //document.forms['f0'].target='Window2'; //post to popup -- comment out to not post to popup
-        document.forms['f0'].target = 'my_iframe';
-        //alert(document.getElementById('skiphttps').checked)
-        if (document.getElementById('pause').checked == false) {
-          //var newwin = window.open('','Window2');
-          document.forms['f0'].mbbsubmit.click(); //this DOES work if we have element named 'submit'
-          //  if (document.getElementById('windowclose').checked == true){
-          //  newwin.close();
+      // this function should parse responses.. you can do anything you need.. 
+      // you can make it general so it would parse all the responses the page receives based on a response field
+      function parseRequest(response) {
+        try // try to output this to the javascript console
+        {
+          JSON = response;
+          pCount = response.items.length;
+          //alert(pCount);
+          testform(); //test
+          //console.log(response);
+          //console.log(response.id);
+          //for (x in response.items)
+          //{
+          //console.log(response.items[x]);
+          //need .mbAction
+          //need .mbMethod
+          //rest goes to payload.
+          //speed
+          //if (x ==1 )
+          // {
+          //console.log(response.items[x]);
+          //console.log(response.items[x]['.mba']);
+          //console.log(response.items[x]['.mbm']);
+          //response.items[x]['.mba'] = '';
+          //response.items[x]['.mbm'] = '';
+          //for (y in response.items[x])
+          //{
+          //  if ( response.items[x][y] != '')
+          //  {
+          //   console.log(y + ' : ' + response.items[x][y]);
+          //setTimeout(function() { console.log(y + ' : ' + response.items[x][y]); }, 1000);
+          //  }
           //}
-        };
-        //setTimeout("win2.close()",1000); //post to popup --comment out to not pop to popup
-        //setTimeout("document.getElementById('iframe1').src='';",1000); 
-        //document.getElementById('iframe1').onbeforeunload = function() { prevent_bust++ }  
-        //setInterval(function() {  if (prevent_bust > 0) {prevent_bust -= 2; document.getElementById('iframe1').top.location = ''; alert('frame'); } }, 1); //antiframebust
-        per = (packcount / totalpacks) * 100;  // draw progress of how far through all packs
-        per = per + ".00001";
-        per = per.substring(0, 4);
-        if (per > 100) per = 100;
-        totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms sent total. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
-        per = (i / pCount) * 100;  // draw progress of how far through this pack
-        per = per + ".00001";
-        per = per.substring(0, 4);
-        if (per > 100) per = 100;
-        document.getElementById('graph').innerHTML = totalsgraph + "<h3>Working in Pack " + (packcount) + ": " + (i + 1) + " of " + pCount + " forms. </h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
-        i++;
-      } //if not paused
-      //setTimeout("document.getElementById('iframe1').src='';", 50); 
-      if (i < pCount) { //go onto next form in pack
-        var windowclose = ""; //'by default, don't close the form
-        if (document.getElementById('pause').checked == false) {
-          //usually yields MUCH better results, by working through broken https certificates
-          //windowclose = "var newwin = window.open('','Window2');newwin.close();";
+          //}
+          //pause(2000); //pause for 2 seconds
+          //setTimeout("a=2",1500);
+          //delay(1000);
+          //}
         }
-        setTimeout(windowclose + "testform();", document.getElementById('speed').value); //create window that already exists so we have a handle to close it (and clear https gotchyas - then wait an amount of time before hitting the next entry
+        catch (an_exception) // alert for the users that don't have a javascript console
+        {
+          //alert(response.script);
+        }
       }
-      else { //end of pack, start a new pack
-        callTheJsonp();
+      function pause(millisconds) {  //pause  - blocking.   do not use.
+        millisconds += new Date().getTime();
+        while (new Date() < millisconds) { /* Do nothing */ }
       }
-    } //function testform()
-  </script>
-
-</body>
-
+      function removeChildrenRecursively(node) {
+        if (!node) return;
+        while (node.hasChildNodes()) {
+          removeChildrenRecursively(node.firstChild);
+          node.removeChild(node.firstChild);
+        }
+      }//end magic of dynamic posts / gets
+      function addField(form, fieldType, fieldName, fieldValue) { //begin magic of dynamic posts / gets   //allows us to call a function after the entire page has loaded - and NOW the html elements exist.  the on page load fires before the html elements exist.
+        if (document.getElementById) {
+          var input = document.createElement('INPUT');
+          if (document.all) { // what follows should work 
+            // with NN6 but doesn't in M14
+            input.type = fieldType;
+            input.name = fieldName;
+            input.value = fieldValue;
+          }
+          else if (document.getElementById) { // so here is the
+            // NN6 workaround
+            input.setAttribute('type', fieldType);
+            input.setAttribute('name', fieldName);
+            input.setAttribute('value', fieldValue);
+          }
+          form.appendChild(input);
+        }
+      }
+      function reverse(s) {
+        return s.split("").reverse().join("");
+      }
+      var active = "categories are skipped";
+      function testform() {
+        if (document.getElementById('pause').checked == false) {
+          sends = sends + 1; //increment counter of how many we've sent
+          //document.getElementById('iframe1').src='';
+          removeChildrenRecursively(document.forms['f0']);  //clear the previous form[0]
+          // document.forms['f0'].target='iframe1';
+          if (JSON.items[i]['.mbm'] == 'P') { document.forms['f0'].method = 'POST'; }
+          if (JSON.items[i]['.mbm'] == 'G') { document.forms['f0'].method = 'GET'; }
+          action = JSON.items[i]['.mba'];
+          switch (action.charAt(0)) {
+            case 'H': action = 'http://www.' + action.slice(1); break;
+            case 'S': action = 'https://www.' + action.slice(1); break;
+            case 'h': action = 'http://' + action.slice(1); break;
+            case 's': action = 'https://' + action.slice(1); break;
+          }
+          document.forms['f0'].action = action;
+          //JSON.items[i]['.mbm'] = '';
+          //JSON.items[i]['.mba'] = '';
+          for (y in JSON.items[i]) {
+            n1 = y;
+            //alert(n1);
+            if ((n1 != '.mba') && (n1 != '.mbs') && (n1 != '.mbu') && (n1 != '.mbm') && (n1 != '.mbid') && (n1 != '.mbadd') && (n1 != '.mbnewfield1') && (n1 != '.mbsave') && (n1 != '')) {
+              value1 = reverse(JSON.items[i][y]);
+              if (value1 == '[e]') { value1 = document.getElementById('.mbe').value; } //set outgoing email field - can be expanded later for more client variable masks
+              if (value1 == '[name]') { value1 = name; }
+              if (value1 == '[pw]') { value1 = pword; }
+              if (value1 != '') { addField(document.forms['f0'], 'text', n1, value1); }
+            }
+          }  //for
+          addField(document.forms['f0'], 'submit', 'mbbsubmit', '')
+          //var newwin = window.open('','Windows2');
+          //document.forms['f0'].target='Window2'; //post to popup -- comment out to not post to popup
+          document.forms['f0'].target = 'my_iframe';
+          //alert(document.getElementById('skiphttps').checked)
+          if (document.getElementById('pause').checked == false) {
+            //var newwin = window.open('','Window2');
+            document.forms['f0'].mbbsubmit.click(); //this DOES work if we have element named 'submit'
+            //  if (document.getElementById('windowclose').checked == true){
+            //  newwin.close();
+            //}
+          };
+          //setTimeout("win2.close()",1000); //post to popup --comment out to not pop to popup
+          //setTimeout("document.getElementById('iframe1').src='';",1000); 
+          //document.getElementById('iframe1').onbeforeunload = function() { prevent_bust++ }  
+          //setInterval(function() {  if (prevent_bust > 0) {prevent_bust -= 2; document.getElementById('iframe1').top.location = ''; alert('frame'); } }, 1); //antiframebust
+          per = (packcount / totalpacks) * 100;  // draw progress of how far through all packs
+          per = per + ".00001";
+          per = per.substring(0, 4);
+          if (per > 100) per = 100;
+          totalsgraph = "<h1>MailBait Processing<h1><h2>" + sends + " forms sent total. <b>Pro and Pro+ " + active + ".</b></h2>MailBait is now active. Consider checking your email to monitor the email pouring in.  Disable ad-block for the best performance.  Keep this tab open for continuous processing.<br/><br/><h3>Overall Progress: " + (packcount) + " of " + totalpacks + " packs</h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White; border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='black' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table><br/><br/>";
+          per = (i / pCount) * 100;  // draw progress of how far through this pack
+          per = per + ".00001";
+          per = per.substring(0, 4);
+          if (per > 100) per = 100;
+          document.getElementById('graph').innerHTML = totalsgraph + "<h3>Working in Pack " + (packcount) + ": " + (i + 1) + " of " + pCount + " forms. </h3><table width='100%' border='0' cellpadding='0' cellspacing='0' style='background-color: White;  border : 0px solid Black;'><tr><td width='" + per + "%' align='right' bgcolor='#3366cc' style='color:white;'><b>" + per + "%</b></td><td width='" + (100 - per) + "%' >&nbsp;</td></tr></table>";
+          i++;
+        } //if not paused
+        //setTimeout("document.getElementById('iframe1').src='';", 50); 
+        if (i < pCount) { //go onto next form in pack
+          var windowclose = ""; //'by default, don't close the form
+          if (document.getElementById('pause').checked == false) {
+            //usually yields MUCH better results, by working through broken https certificates
+            //windowclose = "var newwin = window.open('','Window2');newwin.close();";
+          }
+          setTimeout(windowclose + "testform();", document.getElementById('speed').value); //create window that already exists so we have a handle to close it (and clear https gotchyas - then wait an amount of time before hitting the next entry
+        }
+        else { //end of pack, start a new pack
+          callTheJsonp();
+        }
+      } //function testform()
+    </script>
+  </body>
 </html>
+
