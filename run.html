@@ -210,7 +210,7 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
 &nbsp;
 <br/>	      
       </div>
-
+<!--
 
       <div class="col9">
         <h2>Fill your inbox with email.</h2>
@@ -607,23 +607,23 @@ animation: 10s linear 0s infinite normal forwards running followThrough;
       })
     }
     function adsBlocked(callback) {
-	    return true;
+	//    return true;
 	    
-      //var testURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-      //var myInit = {
-      //  method: 'HEAD',
-      //  mode: 'no-cors'
-      //};
-      //var myRequest = new Request(testURL, myInit);
-      //fetch(myRequest).then(function (response) {
-      //  return response;
-      //}).then(function (response) {
-      //  console.log(response);
-      //  callback(false)
-      //}).catch(function (e) {
-      //  console.log(e)
-      //  callback(true)
-      //});
+      var testURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+      var myInit = {
+        method: 'HEAD',
+        mode: 'no-cors'
+      };
+      var myRequest = new Request(testURL, myInit);
+      fetch(myRequest).then(function (response) {
+        return response;
+      }).then(function (response) {
+        console.log(response);
+        callback(false)
+      }).catch(function (e) {
+        console.log(e)
+        callback(true)
+      });
     }
   </script>
 
